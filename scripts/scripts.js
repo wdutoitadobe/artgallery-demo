@@ -75,6 +75,14 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+
+  // -- peterocks -- // 
+  const acplroot = document.createElement('div');
+  acplroot.classList.add('acpl');
+  while (document.body.firstChild) acplroot.append(document.body.firstChild);
+  document.body.appendChild(acplroot);
+  // -- peterocks -- // 
+
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
