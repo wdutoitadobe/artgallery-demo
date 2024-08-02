@@ -2,8 +2,12 @@
 Your project's description...
 
 ## Environments
+### Main
 - Preview: https://main--ak-bid--bmxcode.hlx.page/
 - Live: https://main--ak-bid--bmxcode.hlx.live/
+### Develop
+- Preview: https://develop--ak-bid--bmxcode.hlx.page/
+- Live: https://develop--ak-bid--bmxcode.hlx.live/
 
 ## Installation
 
