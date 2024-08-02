@@ -96,54 +96,130 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-  // decorate nav DOM
+  // clear the header
   block.textContent = '';
-  const nav = document.createElement('nav');
-  nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  // create the header structure
+  const headerSection = document.createElement('section');
+  headerSection.classList.add('acpl-header-bar', 'primary');
+  headerSection.innerHTML = `
+  <div class="sticker">
+    <div class="header-bar">
+      <div class="content wide">
+      </div>
+    </div>
+  </div>`;
+
+  // populate the header content
+  const contentDiv = headerSection.querySelector('.content');
+  while (fragment.firstElementChild) contentDiv.append(fragment.firstElementChild);
+
+  // set the correct header left/middle/right css
+  const classes = ['left', 'middle', 'right'];
   classes.forEach((c, i) => {
-    const section = nav.children[i];
-    if (section) section.classList.add(`nav-${c}`);
+    const section = contentDiv.children[i];
+    if (section) section.classList.replace('section', `header-${c}`);
   });
 
-  const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  // -- process header left -- //
+  const headerLeft = headerSection.querySelector('.header-left');
+  const headerLeftImage = headerLeft.querySelector('img');
+  if (headerLeftImage) {
+    headerLeft.classList.add('header-left-logo');
+    headerLeft.querySelector('img').removeAttribute('width');
+    headerLeft.querySelector('img').removeAttribute('height');
   }
 
-  const navSections = nav.querySelector('.nav-sections');
-  if (navSections) {
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
-        if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        }
-      });
-    });
+  // process header middle -- //
+
+  // -- process header right -- //
+  const headerRight = headerSection.querySelector('.header-right');
+  const headerRightContent = headerRight.firstChild;
+  const headerRightImages = headerRight.querySelectorAll('picture');
+  console.log('pete images = '+headerRightImages.length)
+  if (headerRightImages.length > 0) {
+    for (const i in headerRightImages) {
+      // header right logo
+      if (i == 0) {
+        // create the div
+        const headerRightLogo = document.createElement('div');
+        headerRightLogo.classList.add('header-right-logo');
+        // add the logo
+        headerRightLogo.append(headerRightImages[i]);
+        headerRightLogo.querySelector('img').removeAttribute('width');
+        headerRightLogo.querySelector('img').removeAttribute('height');
+        headerRight.append(headerRightLogo);
+      }
+
+      // header right mobile logo
+      if (i == 1) {
+        // create the div
+        const mobHeaderRightLogo = document.createElement('div');
+        mobHeaderRightLogo.classList.add('mobile-header-right-logo');
+        // add the mobile logo
+        mobHeaderRightLogo.append(headerRightImages[i]);
+        mobHeaderRightLogo.querySelector('img').removeAttribute('width');
+        mobHeaderRightLogo.querySelector('img').removeAttribute('height');
+        headerLeft.append(mobHeaderRightLogo);
+        // add the moble logo class
+        contentDiv.classList.add('has-right-logo');
+      }
+    }
   }
+  
 
-  // hamburger for mobile
-  const hamburger = document.createElement('div');
-  hamburger.classList.add('nav-hamburger');
-  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
-    </button>`;
-  hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
-  nav.setAttribute('aria-expanded', 'false');
-  // prevent mobile nav behavior on window resize
-  toggleMenu(nav, navSections, isDesktop.matches);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+  // add to block
+  block.append(headerSection);
 
-  const navWrapper = document.createElement('div');
-  navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
-  block.append(navWrapper);
+
+  // // decorate nav DOM
+  // block.textContent = '';
+  // const nav = document.createElement('nav');
+  // nav.id = 'nav';
+  // while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+
+  // const classes = ['brand', 'sections', 'tools'];
+  // classes.forEach((c, i) => {
+  //   const section = nav.children[i];
+  //   if (section) section.classList.add(`nav-${c}`);
+  // });
+
+  // const navBrand = nav.querySelector('.nav-brand');
+  // const brandLink = navBrand.querySelector('.button');
+  // if (brandLink) {
+  //   brandLink.className = '';
+  //   brandLink.closest('.button-container').className = '';
+  // }
+
+  // const navSections = nav.querySelector('.nav-sections');
+  // if (navSections) {
+  //   navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
+  //     if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+  //     navSection.addEventListener('click', () => {
+  //       if (isDesktop.matches) {
+  //         const expanded = navSection.getAttribute('aria-expanded') === 'true';
+  //         toggleAllNavSections(navSections);
+  //         navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+  //       }
+  //     });
+  //   });
+  // }
+
+  // // hamburger for mobile
+  // const hamburger = document.createElement('div');
+  // hamburger.classList.add('nav-hamburger');
+  // hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
+  //     <span class="nav-hamburger-icon"></span>
+  //   </button>`;
+  // hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
+  // nav.prepend(hamburger);
+  // nav.setAttribute('aria-expanded', 'false');
+  // // prevent mobile nav behavior on window resize
+  // toggleMenu(nav, navSections, isDesktop.matches);
+  // isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+
+  // const navWrapper = document.createElement('div');
+  // navWrapper.className = 'nav-wrapper';
+  // navWrapper.append(nav);
+  // block.append(navWrapper);
 }
