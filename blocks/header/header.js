@@ -131,12 +131,38 @@ export default async function decorate(block) {
   }
 
   // process header middle -- //
+  const headerMiddle = headerSection.querySelector('.header-middle');
+  const searchLink = headerMiddle.querySelectorAll('a');
+  console.log(searchLink);
+
+  const searchForm = document.createElement('form');
+  searchForm.classList.add('acpl-form-container');
+  searchForm.action = searchLink[0].getAttribute('href');
+  searchForm.innerHTML = `
+  <div class="acpl-search-box">
+    <div class="search-box">
+      <input class="acpl-textbox search-input rounded-corners" type="text" 
+        placeholder="${searchLink[0].innerHTML}"
+        aria-label="${searchLink[0].innerHTML}"
+        value=""/>
+      <button type="button" role="button" class="acpl-button icon left no-text search-box-button" aria-label="Search">
+        <i class="acpl-icon utility-magnify"></i><span class=""></span>
+      </button>
+    </div>
+  </div>`;
+
+  // clear and add the content
+  headerMiddle.textContent = '';
+  headerMiddle.append(searchForm);
+
 
   // -- process header right -- //
   const headerRight = headerSection.querySelector('.header-right');
-  const headerRightContent = headerRight.firstChild;
+
+  // header right menu
+
+  // header right images
   const headerRightImages = headerRight.querySelectorAll('picture');
-  console.log('pete images = '+headerRightImages.length)
   if (headerRightImages.length > 0) {
     for (const i in headerRightImages) {
       // header right logo
