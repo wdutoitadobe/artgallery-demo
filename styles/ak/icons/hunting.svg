@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="H">
+      <g id="hunting">
+        <g id="Game_hunting_hunting" data-name="Game hunting hunting">
+          <path class="cls-1" d="m0,61.01h18v-23.01s10.68,6.26,11.89,7.02c1.73,1.09,3.41.44,4.26-1.18s8.05-13.21,8.82-14.3c1.73-2.47-.97-4.54-.97-4.54h22v-4H7C1.31,21.11-.02,26.43,0,28.8v32.2m30.16-25.6l4.61-7.59-15.77.03,11.17,7.55ZM.99,11c0-4.42,3.58-8,8-8,4.42,0,8,3.58,8,8,0,4.42-3.57,8-7.99,8-4.42,0-8.01-3.58-8.01-8h0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

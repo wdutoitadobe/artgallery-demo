@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="cricket">
+        <g id="Cricket_wicket" data-name="Cricket wicket">
+          <path class="cls-1" d="m24.46,63.78c2.21.5,4.53.13,6.47-1.05l6.56-40.15-3.77-2.72,2.84-17.71c.25-.89-.27-1.82-1.17-2.07-.14-.04-.29-.06-.43-.06-2-.26-2,1.49-2,1.49l-3.47,17.74-4.13,1.41-6.86,40.05s1.33,2.24,5.94,3.07Z"/>
+          <circle class="cls-1" cx="40.99" cy="48.47" r="4.49"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

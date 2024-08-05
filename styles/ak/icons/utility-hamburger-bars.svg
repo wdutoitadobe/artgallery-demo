@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="hamburger-bars">
+      <path class="cls-1" d="m0,9.14V2.61C0,1.17,1.02,0,2.29,0h59.43c1.26,0,2.29,1.17,2.29,2.61v6.53c0,1.44-1.02,2.61-2.29,2.61H2.29c-1.26,0-2.29-1.17-2.29-2.61Zm0,26.12v-6.53c0-1.44,1.02-2.61,2.29-2.61h59.43c1.26,0,2.29,1.17,2.29,2.61v6.53c0,1.44-1.02,2.61-2.29,2.61H2.29c-1.26,0-2.29-1.17-2.29-2.61Zm0,26.12v-6.53c0-1.44,1.02-2.61,2.29-2.61h59.43c1.26,0,2.29,1.17,2.29,2.61v6.53c0,1.44-1.02,2.61-2.29,2.61H2.29c-1.26,0-2.29-1.17-2.29-2.61Z"/>
+    </g>
+  </g>
+</svg>

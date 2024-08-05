@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="D">
+      <g id="distance">
+        <polygon class="cls-1" points="59.05 22.82 63.39 2.27 64 0 61.67 .62 41.34 4.95 47.9 11.57 11.44 47.89 4.95 41.34 .62 61.67 0 64 2.08 63.45 22.66 59.21 16.1 52.59 52.56 16.27 59.05 22.82"/>
+      </g>
+    </g>
+  </g>
+</svg>

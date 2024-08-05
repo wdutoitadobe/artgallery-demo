@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bace2;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #061a2f;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="commercial-parking">
+        <g id="Parking_commercial" data-name="Parking commercial">
+          <circle class="cls-1" cx="32" cy="32" r="32"/>
+          <circle class="cls-2" cx="32" cy="32" r="28.92"/>
+          <path class="cls-3" d="m46.87,15.36c-2.41-2.11-5.64-3.16-9.71-3.16h-16.36c-.67,0-1.22.54-1.22,1.22v38.53c0,.67.54,1.22,1.22,1.22h6.07c.67,0,1.22-.54,1.22-1.22v-12.3c0-.67.54-1.22,1.22-1.22h7.31c4.45,0,7.88-1,10.28-3,2.4-2,3.6-5.42,3.6-10.26,0-4.43-1.2-7.7-3.61-9.81Zm-6.51,14.54c-1.08.98-2.6,1.47-4.56,1.47h-6.5c-.67,0-1.22-.54-1.22-1.22v-9.63c0-.67.54-1.21,1.21-1.21,0,0,0,0,0,0h6.5c1.96,0,3.48.45,4.56,1.35,1.08.9,1.62,2.42,1.63,4.56,0,2.14-.54,3.69-1.63,4.68Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

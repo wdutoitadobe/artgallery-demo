@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Social_media_and_app" data-name="Social media and app">
+    <g id="round">
+      <g id="app-twitter">
+        <path class="cls-1" d="m32,64c17.67,0,32-14.33,32-32S49.67,0,32,0,0,14.33,0,32s14.33,32,32,32ZM49.88,12.8l-14.29,16.27,15.63,22.13h-11.3l-10.63-14.95-13.12,14.95h-3.37l14.95-17.07L12.8,12.8h11.43l9.89,14.14,12.38-14.14h3.37Zm-20.45,19.42l1.54,2.13,10.41,14.44h5.2l-12.68-17.73-1.54-2.13-9.75-13.63h-5.2l12.02,16.93Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

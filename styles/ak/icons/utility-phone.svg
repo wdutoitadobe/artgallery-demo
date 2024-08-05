@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="phone">
+      <path id="Phone_phone_to_call_ranger_pay_phone" data-name="Phone phone to call ranger pay phone" class="cls-1" d="m62.22,48.53s-10.42-6.07-12.48-6.98-2.74,0-3.55.8c0,0-4.01,4.69-4.69,5.61-.87,1.18-2.44,1.6-3.79,1.03,0,0-8.65-4.67-13.56-9.35h0c-4.81-4.81-9.16-13.29-9.16-13.29-.57-1.35-.14-2.91,1.03-3.79.92-.69,5.61-4.69,5.61-4.69.8-.8,1.71-1.49.8-3.55-.91-2.06-6.96-12.55-6.96-12.55-.48-1.25-1.78-1.98-3.09-1.73C9.19.3-6.97,4.17,3.47,28.93c2.93,7.08,7.3,13.47,12.82,18.78,5.31,5.52,11.71,9.89,18.78,12.82,24.76,10.44,28.63-5.72,28.88-8.91.25-1.31-.47-2.61-1.71-3.09"/>
+    </g>
+  </g>
+</svg>

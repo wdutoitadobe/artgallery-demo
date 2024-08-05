@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="E">
+      <g id="electricity">
+        <g id="Layer_2" data-name="Layer 2">
+          <polygon class="cls-1" points="51.54 28.6 42.97 28.6 32.08 28.6 41.61 0 12.46 35.41 21.03 35.41 31.92 35.41 22.4 64 51.54 28.6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

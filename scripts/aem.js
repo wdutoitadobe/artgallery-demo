@@ -43,7 +43,7 @@ function sampleRUM(checkpoint, data) {
                 .shift()
                 .replace(/at ([^ ]+) \((.+)\)/, '$1@$2')
                 .trim();
-            } catch (err) {
+            } catch {
               /* error structure was not as expected */
             }
             sampleRUM('error', errData);
@@ -88,7 +88,7 @@ function sampleRUM(checkpoint, data) {
       window.hlx.rum.collector(checkpoint, data, timeShift());
     }
     document.dispatchEvent(new CustomEvent('rum', { detail: { checkpoint, data } }));
-  } catch (error) {
+  } catch {
     // something went wrong
   }
 }

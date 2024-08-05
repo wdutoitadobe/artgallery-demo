@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="E">
+      <g id="event-site">
+        <g id="Event_site" data-name="Event site">
+          <rect class="cls-1" x="10" y="32" width="4" height="28"/>
+          <rect class="cls-1" x="50" y="32" width="3.9" height="28"/>
+          <path class="cls-1" d="m32,0C20.87,18.36,0,20.95,0,20.95v9.05h2v34h4V30h52v34h3.96V30h2.04v-9.05S43.13,18.36,32,0Zm0,27h-11c7-6.72,11-24,11-24,0,0,4,17.28,11,24h-11Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

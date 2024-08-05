@@ -133,7 +133,6 @@ export default async function decorate(block) {
   // process header middle -- //
   const headerMiddle = headerSection.querySelector('.header-middle');
   const searchLink = headerMiddle.querySelectorAll('a');
-  console.log(searchLink);
 
   const searchForm = document.createElement('form');
   searchForm.classList.add('acpl-form-container');
@@ -155,7 +154,6 @@ export default async function decorate(block) {
   headerMiddle.textContent = '';
   headerMiddle.append(searchForm);
 
-
   // -- process header right -- //
   const headerRight = headerSection.querySelector('.header-right');
 
@@ -164,39 +162,37 @@ export default async function decorate(block) {
   // header right images
   const headerRightImages = headerRight.querySelectorAll('picture');
   if (headerRightImages.length > 0) {
-    for (const i in headerRightImages) {
+    headerRightImages.forEach((element, idx) => {
       // header right logo
-      if (i == 0) {
+      if (idx === 0) {
         // create the div
         const headerRightLogo = document.createElement('div');
         headerRightLogo.classList.add('header-right-logo');
         // add the logo
-        headerRightLogo.append(headerRightImages[i]);
+        headerRightLogo.append(element);
         headerRightLogo.querySelector('img').removeAttribute('width');
         headerRightLogo.querySelector('img').removeAttribute('height');
         headerRight.append(headerRightLogo);
       }
 
       // header right mobile logo
-      if (i == 1) {
+      if (idx === 1) {
         // create the div
         const mobHeaderRightLogo = document.createElement('div');
         mobHeaderRightLogo.classList.add('mobile-header-right-logo');
         // add the mobile logo
-        mobHeaderRightLogo.append(headerRightImages[i]);
+        mobHeaderRightLogo.append(element);
         mobHeaderRightLogo.querySelector('img').removeAttribute('width');
         mobHeaderRightLogo.querySelector('img').removeAttribute('height');
         headerLeft.append(mobHeaderRightLogo);
         // add the moble logo class
         contentDiv.classList.add('has-right-logo');
       }
-    }
+    });
   }
-  
 
   // add to block
   block.append(headerSection);
-
 
   // // decorate nav DOM
   // block.textContent = '';
@@ -219,7 +215,8 @@ export default async function decorate(block) {
 
   // const navSections = nav.querySelector('.nav-sections');
   // if (navSections) {
-  //   navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
+  // eslint-disable-next-line max-len
+  //  navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
   //     if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
   //     navSection.addEventListener('click', () => {
   //       if (isDesktop.matches) {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="B">
+      <g id="boat-mooring">
+        <g id="Boat_mooring_wharf_jetty" data-name="Boat mooring wharf jetty">
+          <rect class="cls-1" x="32" y="3.5" width="16" height="4.94"/>
+          <polygon class="cls-1" points="47.86 47.52 47.86 23.5 32 23.5 32 47.5 31.83 47.5 31.83 47.52 28 47.52 28 60.5 64 60.5 64 47.52 47.86 47.52"/>
+          <path class="cls-1" d="m32,13.5h20v-4h-24.19l-.81,4H0v4h26s-2.69,17.81-11.12,31.18l3,2.67s6.12-3.38,12.12-29.85h22v-4h-21l1-4Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

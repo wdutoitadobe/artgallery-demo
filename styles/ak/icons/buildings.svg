@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="B">
+      <g id="buildings">
+        <g id="Layer_2" data-name="Layer 2">
+          <polygon class="cls-1" points="15.52 23.99 0 34.95 15.52 34.95 31.04 34.95 15.52 23.99"/>
+          <path class="cls-1" d="m23.75,42.05h-5.7v6.67h5.7v-6.67Zm3.71-5.7v18.63h-12.84v-12.93h-7.31v12.93h-3.74v-18.63h23.89Z"/>
+          <path class="cls-1" d="m58.25,25.24v6.21h5.75v2.98h-5.75v6.21h5.75v2.98h-5.75v11.35h-23.3V9.02h23.3v13.23h5.75v2.98h-5.75Zm-10.94,0h-10.24v6.21h10.24v-6.21Zm8.96,0h-7.14v6.21h7.14v-6.21Zm-8.96-9.19h-10.24v6.21h10.24v-6.21Zm8.96,0h-7.14v6.21h7.14v-6.21Zm-8.96,18.38h-10.24v6.21h10.24v-6.21Zm8.96,0h-7.14v6.21h7.14v-6.21Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

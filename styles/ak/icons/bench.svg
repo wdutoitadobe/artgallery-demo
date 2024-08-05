@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="B">
+      <g id="bench">
+        <g>
+          <rect class="cls-1" y="13.5" width="64" height="6"/>
+          <path class="cls-1" d="m0,27.39h6v4.11H0v6h6v13h6v-13h40v13h6v-13h6v-6h-6v-4.11h6v-5.89H0v5.89Zm52,4.11H12v-4.11h40v4.11Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

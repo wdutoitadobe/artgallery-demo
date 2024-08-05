@@ -36,7 +36,7 @@ async function loadFonts() {
   await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`);
   try {
     if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true');
-  } catch (e) {
+  } catch {
     // do nothing
   }
 }
@@ -76,19 +76,19 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
 
-  // -- peterocks -- // 
+  // -- peterocks -- //
   const acplroot = document.createElement('div');
   acplroot.classList.add('acpl');
   while (document.body.firstChild) acplroot.append(document.body.firstChild);
   document.body.appendChild(acplroot);
-  // -- peterocks -- // 
+  // -- peterocks -- //
 
   const main = doc.querySelector('main');
   if (main) {
-    // -- peterocks -- // 
+    // -- peterocks -- //
     main.classList.add('mt-4');
-    // -- peterocks -- // 
-    
+    // -- peterocks -- //
+
     decorateMain(main);
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
@@ -101,7 +101,7 @@ async function loadEager(doc) {
     if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
       loadFonts();
     }
-  } catch (e) {
+  } catch {
     // do nothing
   }
 }

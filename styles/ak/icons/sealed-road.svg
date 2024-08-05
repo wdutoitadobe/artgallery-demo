@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="S">
+      <g id="sealed-road">
+        <g id="Sealed_road" data-name="Sealed road">
+          <polygon class="cls-1" points="14.96 8.99 0 55.01 7.48 55.01 18.85 8.99 14.96 8.99"/>
+          <polygon class="cls-1" points="49.04 8.99 64 55.01 56.52 55.01 45.15 8.99 49.04 8.99"/>
+          <path class="cls-1" d="m42.34,8.99h-8.89l.5,7.08h-3.96l.49-7.08h-8.76l-11,46.01h16.45l.56-6.81h8.47l.57,6.81h16.59l-11-46.01Zm-12.74,13.48h4.72l.5,6.62h-5.72l.5-6.62Zm2.81,19.61h-4.42l.69-6.74h6.47l.69,6.74h-3.43Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

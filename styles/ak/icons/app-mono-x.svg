@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #001930;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Social_media_and_app" data-name="Social media and app">
+    <g id="x">
+      <path class="cls-1" d="m37.97,27.12L61.77.02h-5.62l-20.63,23.56L19.04.02H0l24.9,35.53L0,63.98h5.62l21.85-24.9,17.71,24.9h18.82l-26.03-36.87Zm-7.69,8.79l-2.56-3.54L7.69,4.17h8.67l16.24,22.71,2.56,3.54,21.12,29.54h-8.67l-17.34-24.05Z"/>
+    </g>
+  </g>
+</svg>

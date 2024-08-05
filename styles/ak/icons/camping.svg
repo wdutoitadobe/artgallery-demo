@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="camping">
+        <g id="Camping_campsite_campground" data-name="Camping campsite campground">
+          <polygon class="cls-1" points="19 17.5 0 46.49 27 46.5 44 17.5 19 17.5"/>
+          <polygon class="cls-1" points="44.07 46.5 44.07 17.5 64 46.5 44.07 46.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

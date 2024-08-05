@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="P">
+      <g id="power-point">
+        <g>
+          <path class="cls-1" d="m58.63,33.91l2.68-3.95V12l-2.86-3.95h-13.43v5.75h-11.49v4.79h11.5v3.83h-11.5v4.79h11.5v5.75h5.3v16.27c.32,7.42,10.95,6.7,10.97,6.7l2.7-3.06-2.7.03s-7.81.34-7.82-3.66c-.02-7.63,0-15.32,0-15.32h5.15Z"/>
+          <path class="cls-2" d="m0,20.81c.01-7.01,5.7-12.69,12.72-12.68s12.69,5.7,12.68,12.72c-.01,7.01-5.7,12.69-12.72,12.68-7-.01-12.67-5.68-12.68-12.68v-.04m19.48-2.82l-2.59-4.45-2.65,1.57,2.57,4.45,2.66-1.57Zm-13.74,0l2.58-4.45,2.59,1.68-2.57,4.45-2.6-1.67Zm8.48,5.39h-3.08v4.79h3.08v-4.79Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

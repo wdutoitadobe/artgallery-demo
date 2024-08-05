@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="D">
+      <g id="drinking-water">
+        <g id="Drinking_water" data-name="Drinking water">
+          <path class="cls-1" d="m40,38c6.63,0,2.21-8.27,0-13-2.21,4.44-6.63,13,0,13Z"/>
+          <path class="cls-1" d="m36.5,20v3h8v-6.92c0-2.49-1.18-6.08-5.93-6.08h-18.07v-5h8V0H8.5v5h8v5H4.5v8h30c1.1,0,2,.9,2,2Z"/>
+          <path class="cls-1" d="m55.5,25l-3.06,17c-1.46-.28-2.64.31-4.1,1.18s-2.63,1.18-5-.28-5.28-.3-6.75.87-2.94.88-4.4-.29c-1.3-1.06-2.95-1.59-4.63-1.48l-3.06-17h-4l7,39h25l7-39h-4Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

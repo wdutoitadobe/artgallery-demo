@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="V">
+      <g id="vineyard">
+        <g id="Vineyard">
+          <circle class="cls-1" cx="13.86" cy="24.27" r="7.34"/>
+          <circle class="cls-1" cx="32" cy="24.27" r="7.34"/>
+          <circle class="cls-1" cx="32" cy="56.66" r="7.34"/>
+          <circle class="cls-1" cx="50.14" cy="24.27" r="7.34"/>
+          <circle class="cls-1" cx="41.64" cy="40.47" r="7.34"/>
+          <circle class="cls-1" cx="23.5" cy="40.47" r="7.34"/>
+          <path class="cls-1" d="m35.57,14.19S35.27-1.45,51.84.11c0,0,1.89,15.65-16.27,14.08Z"/>
+          <path class="cls-1" d="m31.88,13.98c-.6-.09-1.04-.61-1.04-1.21V3.84c-.01-.62.44-1.15,1.05-1.23.63-.06,1.2.41,1.25,1.05,0,.03,0,.07,0,.1v9.07c0,.64-.52,1.16-1.16,1.16-.04,0-.08,0-.12,0Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

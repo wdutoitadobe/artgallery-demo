@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="calendar">
+      <path class="cls-1" d="m32.5,50.99h16v-16h-16v16Zm24,6c.11,1-.62,1.89-1.62,2,0,0,0,0,0,0-.13.01-.26.01-.38,0H9.5c-1,.11-1.89-.62-2-1.62-.01-.13-.01-.26,0-.38V22.99h49v34Zm5,2.37V10.12s-.36-5.11-5-5.11h-3V0h-7.9l-.1,5.01h-27V0h-8v5.01h-3s-5,.47-5,5.11v49.24s0,4.64,4.64,4.64h49.71s4.64,0,4.64-4.64"/>
+    </g>
+  </g>
+</svg>

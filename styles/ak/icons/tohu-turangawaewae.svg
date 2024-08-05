@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Tohu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Tūrangawaewae">
+    <path class="cls-1" d="m27.67,16v3.2L0,31.37v4.92l7.36-3.24v8.66H0v6.28h64v-6.28h-7.36v-8.66l7.36,3.24v-4.92l-27.67-12.17v-3.2h-8.66Zm6.73,7.42l17.42,7.51v10.78h-17.42v-18.29Zm-22.22,7.51l17.41-7.51v18.29H12.18v-10.78Z"/>
+  </g>
+</svg>

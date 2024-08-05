@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="Z">
+      <g id="zoo">
+        <g id="Zoo">
+          <path class="cls-1" d="m52.2,46.78c0-9.44-8.75-17.1-19.54-17.1s-19.54,7.66-19.54,17.1,8.75,12.96,19.54,12.96,19.54-3.52,19.54-12.96Z"/>
+          <ellipse class="cls-1" cx="7.59" cy="25.69" rx="7.18" ry="8.69" transform="translate(-11.83 7.24) rotate(-30)"/>
+          <ellipse class="cls-1" cx="23.41" cy="13.56" rx="6.47" ry="9.41" transform="translate(-2.33 5.24) rotate(-12.18)"/>
+          <ellipse class="cls-1" cx="42.37" cy="15.01" rx="9.22" ry="5.79" transform="translate(17.35 52.35) rotate(-75.67)"/>
+          <ellipse class="cls-1" cx="57.58" cy="27.05" rx="8.02" ry="5.79" transform="translate(5.37 63.39) rotate(-60)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

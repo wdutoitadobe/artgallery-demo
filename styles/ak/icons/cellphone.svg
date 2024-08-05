@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="cellphone">
+        <path id="Cellphone_mobile_phone_smart_phone" data-name="Cellphone mobile phone smart phone" class="cls-1" d="m45,0h-26c-2.21,0-4,1.79-4,4v56c0,2.21,1.79,4,4,4h26c2.21,0,4-1.79,4-4V4c0-2.21-1.79-4-4-4Zm-18,3h10c.55,0,1,.45,1,1s-.45,1-1,1h-10c-.55,0-1-.45-1-1s.45-1,1-1Zm5,58c-1.66,0-3-1.34-3-3s1.34-3,3-3,3,1.34,3,3-1.34,3-3,3h0Zm13-9h-26V8h26v44Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

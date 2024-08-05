@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Tohu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Taonga_Tuku_Iho" data-name="Taonga Tuku Iho">
+    <g>
+      <path class="cls-1" d="m53.33,42.66h-21.34v-5.33c0-2.94-2.39-5.33-5.33-5.33h-5.34s-10.65,0-10.65,0v-10.65H0v10.65H0v10.67h21.32v10.67h16.01v.02c2.94,0,5.33,2.38,5.33,5.33v5.33h10.67v-.02h10.65v-10.67h-10.65v-10.65Z"/>
+      <path class="cls-1" d="m53.33,21.32v-10.65h-21.34v-5.33C31.99,2.39,29.61,0,26.67,0h-5.33S10.67,0,10.67,0H0v10.67h21.34v10.67h16c2.94,0,5.33,2.39,5.33,5.33v5.33h21.34v-10.67h-10.67Z"/>
+    </g>
+    <path class="cls-1" d="m5.34,53.34H0s0,10.66,0,10.66h10.67v-5.33c0-2.94-2.39-5.33-5.33-5.33"/>
+  </g>
+</svg>

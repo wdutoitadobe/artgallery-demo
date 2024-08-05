@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="video-play">
+      <path class="cls-1" d="m57.05,26.87L13.07.86C10.26-.84,6.59.06,4.89,2.87c-.58.95-.88,2.05-.86,3.16v51.98c.01,3.32,2.71,6,6.02,5.99,1.06,0,2.1-.29,3.02-.83l43.96-25.98c2.85-1.69,3.8-5.37,2.11-8.23-.51-.86-1.23-1.58-2.09-2.1Z"/>
+    </g>
+  </g>
+</svg>

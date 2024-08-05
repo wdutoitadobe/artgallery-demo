@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Kotahitanga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Kotahitanga_-_Anther_-_Tier_1_-_reverse" data-name="Kotahitanga - Anther - Tier 1 - reverse">
+    <g>
+      <path class="cls-1" d="m0,32v32h32C14.33,64,0,49.67,0,32Z"/>
+      <path class="cls-1" d="m32,0H0v32C0,14.33,14.33,0,32,0Z"/>
+      <path class="cls-1" d="m32,0c17.67,0,32,14.33,32,32V0h-32Z"/>
+      <path class="cls-1" d="m32,64h32V32c0,17.67-14.33,32-32,32Z"/>
+    </g>
+  </g>
+</svg>

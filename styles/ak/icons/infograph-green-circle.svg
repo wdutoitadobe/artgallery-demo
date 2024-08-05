@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5b9c33;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Infographic_icons" data-name="Infographic icons">
+    <g id="green-circle">
+      <circle class="cls-2" cx="32" cy="32" r="32"/>
+      <path class="cls-1" d="m32,8c13.23,0,24,10.77,24,24s-10.77,24-24,24-24-10.77-24-24,10.77-24,24-24m0-8C14.33,0,0,14.33,0,32s14.33,32,32,32,32-14.33,32-32S49.67,0,32,0h0Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="sound-mute">
+      <path class="cls-1" d="m-.05,15.34v33.2h16.25l15.18,15.46V0l-15.04,15.34H-.05Z"/>
+      <path class="cls-1" d="m35.42,18.58c-1.07,1.07-1.07,2.82,0,3.89l9.97,9.97-9.97,9.97c-1.07,1.07-1.07,2.82,0,3.89,1.07,1.07,2.82,1.07,3.89,0l9.97-9.97,9.97,9.97c1.07,1.07,2.82,1.07,3.89,0s1.07-2.82,0-3.89l-9.97-9.97,9.97-9.97c1.07-1.07,1.07-2.82,0-3.89-1.07-1.07-2.82-1.07-3.89,0l-9.97,9.97-9.97-9.97c-1.07-1.07-2.82-1.07-3.89,0Z"/>
+    </g>
+  </g>
+</svg>
