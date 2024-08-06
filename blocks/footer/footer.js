@@ -20,6 +20,8 @@ function decorateFooterButton(footerButtonDiv) {
 
 function decorateGroupLinks(footerColumns) {
 
+  const footerColumnsChild = footerColumns.firstElementChild;
+
   // create wrapping divs
   const footerTop = createElementWithClasses('div', 'footer-top');
   const footerContainer = createElementWithClasses('div', 'footer-container', 'content', 'wide');
@@ -33,9 +35,9 @@ function decorateGroupLinks(footerColumns) {
   footerLinksList.append(footerLinksGroupWrapper);
 
   // fetch the existing columns
-  const footerColumnsExisting = footerColumns.firstElementChild.children;
+  const footerColumnsExisting = footerColumnsChild.firstElementChild.children;
 
-  for (let i = 0; i < footerColumnsExisting.length; i++) {
+  for (let i = 0; i < footerColumnsExisting.length; i+=1) {
 
     // create a new column
     const newColumn = document.createElement('div');
@@ -55,7 +57,7 @@ function decorateGroupLinks(footerColumns) {
     const newLinkList = document.createElement('ul');
     newLinkList.classList.add('footer-links', 'unstyled');
 
-    for (let j = 0; j < existingLinkList.children.length; j++) {
+    for (let j = 0; j < existingLinkList.children.length; j+=1) {
 
       // create new link using existing link's attributes and text
       const listItem = existingLinkList.children[j];
