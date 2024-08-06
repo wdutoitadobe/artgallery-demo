@@ -70,7 +70,7 @@ function decorateGroupLinks(footerColumns) {
       // create new link using existing link's attributes and text
       const listItem = existingLinkList.children[j];
       const link = listItem.firstElementChild;
-      const linkText = link.textContent
+      const linkText = link.textContent;
       link.setAttribute('rel', 'noopener noreferrer');
       link.setAttribute('target', '_blank');
       link.setAttribute('class', '');
