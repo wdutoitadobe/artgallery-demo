@@ -20,7 +20,11 @@ function decorateFooterButton(footerButtonDiv) {
   footerButton.innerHTML = `
         <i class="acpl-icon utility-chevron"></i>
         <span>${buttonTitle}</span>`;
-  footerButton.addEventListener('click', () => window.scrollTo(0, 0));
+  footerButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.tabIndex = -1;
+    document.body.focus();
+  });
   return footerButton;
 }
 
