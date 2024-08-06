@@ -1,32 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-/**
- * loads and decorates the footer
- * @param {Element} block The footer block element
- */
-export default async function decorate(block) {
-  // load footer as fragment
-  const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
-  const fragment = await loadFragment(footerPath);
-
-  // decorate footer DOM
-  block.textContent = '';
-
-  block.parentNode.classList.add('acpl-footer');
-
-  const footer = document.createElement('div');
-
-  const section = fragment.firstElementChild;
-  const children = section.children;
-
-  footer.append(decorateFooterButton(children[0]));
-  footer.append(decorateGroupLinks(children[1].firstElementChild));
-
-  block.append(footer);
-}
-
 function decorateFooterButton(footerButtonDiv) {
 
   const footerButton = document.createElement('button');
@@ -38,7 +12,7 @@ function decorateFooterButton(footerButtonDiv) {
   footerButton.setAttribute('role', 'button');
 
   footerButton.classList.add('acpl-button', 'icon', 'left', 'footer-button-to-top');
-    footerButton.innerHTML = `
+  footerButton.innerHTML = `
         <i class="acpl-icon utility-chevron"></i>
         <span>${buttonTitle}</span>`;
   return footerButton;
@@ -94,7 +68,7 @@ function decorateGroupLinks(footerColumns) {
                 <span class="">
                   <span class="">${linkText}</span>
                 </span>
-                <span class="acpl-no-break">﻿</span>
+                <span class="acpl-no-break"></span>
                 <i class="acpl-icon utility-external-link"></i>
               </span>`;
 
@@ -115,4 +89,31 @@ function createElementWithClasses(elementType, ...classes) {
   const element = document.createElement(elementType);
   element.classList.add(...classes);
   return element;
+}
+
+/**
+ * loads and decorates the footer
+ * @param {Element} block The footer block element
+ */
+export default async function decorate(block) {
+  // load footer as fragment
+  const footerMeta = getMetadata('footer');
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  const fragment = await loadFragment(footerPath);
+
+  // decorate footer DOM
+  block.textContent = '';
+
+  block.parentNode.classList.add('acpl-footer');
+
+  const footer = document.createElement('div');
+
+  const section = fragment.firstElementChild;
+  const buttonDiv = section.children.item(0);
+  const groupLinksDiv = section.children.item(1);
+
+  footer.append(decorateFooterButton(buttonDiv));
+  footer.append(decorateGroupLinks(groupLinksDiv));
+
+  block.append(footer);
 }
