@@ -63,7 +63,6 @@ function decorateGroupLinks(footerColumns) {
     const existingLinkList = existingColumn.getElementsByTagName('ul')[0];
     const newLinkList = document.createElement('ul');
     newLinkList.classList.add('footer-links', 'unstyled');
-    
     for (let j = 0; j < existingLinkList.children.length; j += 1) {
       // create new link using existing link's attributes and text
       const listItem = existingLinkList.children[j];
