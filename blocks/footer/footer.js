@@ -1,8 +1,13 @@
 import {decorateBlock, getMetadata} from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-function decorateFooterButton(footerButtonDiv) {
+function createElementWithClasses(elementType, ...classes) {
+  const element = document.createElement(elementType);
+  element.classList.add(...classes);
+  return element;
+}
 
+function decorateFooterButton(footerButtonDiv) {
   const footerButton = document.createElement('button');
 
   const link = footerButtonDiv.firstElementChild.firstElementChild;
@@ -20,7 +25,6 @@ function decorateFooterButton(footerButtonDiv) {
 }
 
 function decorateGroupLinks(footerColumns) {
-
   const footerColumnsChild = footerColumns.firstElementChild;
 
   // create wrapping divs
@@ -37,8 +41,7 @@ function decorateGroupLinks(footerColumns) {
 
   // fetch the existing columns
   const footerColumnsExisting = footerColumnsChild.firstElementChild.children;
-
-  for (let i = 0; i < footerColumnsExisting.length; i+=1) {
+  for (let i = 0; i < footerColumnsExisting.length; i += 1) {
 
     // create a new column
     const newColumn = document.createElement('div');
@@ -58,7 +61,7 @@ function decorateGroupLinks(footerColumns) {
     const newLinkList = document.createElement('ul');
     newLinkList.classList.add('footer-links', 'unstyled');
 
-    for (let j = 0; j < existingLinkList.children.length; j+=1) {
+    for (let j = 0; j < existingLinkList.children.length; j += 1) {
 
       // create new link using existing link's attributes and text
       const listItem = existingLinkList.children[j];
@@ -86,12 +89,6 @@ function decorateGroupLinks(footerColumns) {
   }
 
   return footerTop;
-}
-
-function createElementWithClasses(elementType, ...classes) {
-  const element = document.createElement(elementType);
-  element.classList.add(...classes);
-  return element;
 }
 
 /**
