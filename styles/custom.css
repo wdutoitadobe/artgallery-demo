@@ -10,8 +10,29 @@
  * governing permissions and limitations under the License.
  */
 
+:root {
+    --header-menu-top-desktop: 112px;
+    --header-menu-top-tablet: 255px;
+    --header-menu-top-mobile: 239px;
+}
 
- html,
- body {
-     margin: 0;
- }
+html,
+body {
+ margin: 0;
+}
+
+header {
+    min-height: var(--header-menu-top-desktop);
+}
+
+@media (width <= 991.5px) {
+    header {
+        min-height: var(--header-menu-top-tablet);
+    }
+}
+
+@media (width <= 576px) {
+    header {
+        min-height: var(--header-menu-top-mobile);
+    }
+}

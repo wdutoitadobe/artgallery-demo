@@ -1,9 +1,3 @@
-:root {
-    --header-menu-top-desktop: 112px;
-    --header-menu-top-tablet: 255px;
-    --header-menu-top-mobile: 239px;
-}
-
 .header-wrapper .menu-content.menu-links {
     top: var(--header-menu-top-desktop);
 }
