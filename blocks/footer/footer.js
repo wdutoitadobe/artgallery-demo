@@ -1,4 +1,4 @@
-import {decorateBlock, getMetadata} from '../../scripts/aem.js';
+import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 function createElementWithClasses(elementType, ...classes) {
@@ -46,7 +46,6 @@ function decorateGroupLinks(footerColumns) {
   // fetch the existing columns
   const footerColumnsExisting = footerColumnsChild.firstElementChild.children;
   for (let i = 0; i < footerColumnsExisting.length; i += 1) {
-
     // create a new column
     const newColumn = document.createElement('div');
     newColumn.classList.add('footer-links-group');
@@ -64,9 +63,8 @@ function decorateGroupLinks(footerColumns) {
     const existingLinkList = existingColumn.getElementsByTagName('ul')[0];
     const newLinkList = document.createElement('ul');
     newLinkList.classList.add('footer-links', 'unstyled');
-
+    
     for (let j = 0; j < existingLinkList.children.length; j += 1) {
-
       // create new link using existing link's attributes and text
       const listItem = existingLinkList.children[j];
       const link = listItem.firstElementChild;
