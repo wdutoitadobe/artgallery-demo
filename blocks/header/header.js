@@ -86,6 +86,72 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+const generateMenu = (links) => {
+  const menuDivContainer = document.createElement('div');
+  menuDivContainer.classList.add('container-content', 'button-options', 'has-menu');
+  menuDivContainer.innerHTML = `
+        <button type="button" role="button" class="acpl-button secondary icon left menu-button" aria-expanded="false">
+            <i class="acpl-icon utility-hamburger-bars"></i>
+            <span>Menu</span>
+        </button>
+       <div class="menu-content menu-links">
+        <nav class="acpl-quick-links" aria-label="Main">
+            <div class="content wide">
+                <div class="heading container-content">
+                    <label for="ql-browse-the-auckland-council-website">Browse the Auckland Council website</label>
+                    <p>Find it quickly if you know what you want to do.</p>
+                </div>
+                <div class="links" id="ql-browse-the-auckland-council-website">
+                    <div class="links-grouped">
+                        <div id="rollup-undefined" class="acpl-rollup">
+                            <ul class="three-col links-only unstyled">
+                                ${Array.from(links).map((menuLink) => `
+                                    <li>
+                                        <div class="rollup-generic-link container-content">
+                                            <h4 class="rollup-heading-link">
+                                                <span class="main-heading-section">
+                                                    <span class="heading">
+                                                        <a href="${menuLink.href}" target="_self" title="${menuLink.title}" rel="noopener noreferrer">
+                                                          <span class="acpl-icon-with-attribute right">
+                                                            <span>${menuLink.title}</span>
+                                                            <span class="acpl-no-break"></span>
+                                                            <i class="acpl-icon utility-external-link"></i>
+                                                          </span>
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </h4>
+                                        </div>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <button type="button" role="button" class="acpl-button icon left no-text close-menu" aria-label="Close menu">
+          <i class="acpl-icon utility-cross"></i>
+       </button>
+    </div>
+    `;
+  const menuBtn = menuDivContainer.querySelector('.acpl-button');
+  const menuBtnIcon = menuBtn.querySelector('i');
+  const menuContainerDiv = menuDivContainer.querySelector('.menu-content');
+  const closeMenuBtn = menuDivContainer.querySelector('.acpl-button.close-menu');
+
+  const handleMenuClick = () => {
+    menuBtn.classList.toggle('expanded');
+    menuBtn.classList.toggle('secondary');
+    menuContainerDiv.classList.toggle('open');
+    menuBtnIcon.classList.toggle('utility-cross');
+    menuBtnIcon.classList.toggle('utility-hamburger-bars');
+  };
+  menuBtn.addEventListener('click', handleMenuClick);
+  closeMenuBtn.addEventListener('click', handleMenuClick);
+  return menuDivContainer;
+};
+
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -115,7 +181,7 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) contentDiv.append(fragment.firstElementChild);
 
   // set the correct header left/middle/right css
-  const classes = ['left', 'middle', 'right'];
+  const classes = ['left', 'middle', 'right', 'menu'];
   classes.forEach((c, i) => {
     const section = contentDiv.children[i];
     if (section) section.classList.replace('section', `header-${c}`);
@@ -132,6 +198,7 @@ export default async function decorate(block) {
 
   // process header middle -- //
   const headerMiddle = headerSection.querySelector('.header-middle');
+  headerMiddle.classList.add('has-search');
   const searchLink = headerMiddle.querySelectorAll('a');
 
   const searchForm = document.createElement('form');
@@ -157,92 +224,42 @@ export default async function decorate(block) {
   // -- process header right -- //
   const headerRight = headerSection.querySelector('.header-right');
 
-  // header right menu
-
+  // -- process header menu -- //
+  const headerMenuSection = headerSection.querySelector('.header-menu');
+  const headerMenuLinks = headerMenuSection.querySelectorAll('.default-content-wrapper p a');
+  headerRight.append(generateMenu(headerMenuLinks));
+  headerMenuSection.remove();
   // header right images
-  const headerRightImages = headerRight.querySelectorAll('picture');
-  if (headerRightImages.length > 0) {
-    headerRightImages.forEach((element, idx) => {
-      // header right logo
-      if (idx === 0) {
-        // create the div
-        const headerRightLogo = document.createElement('div');
-        headerRightLogo.classList.add('header-right-logo');
-        // add the logo
-        headerRightLogo.append(element);
-        headerRightLogo.querySelector('img').removeAttribute('width');
-        headerRightLogo.querySelector('img').removeAttribute('height');
-        headerRight.append(headerRightLogo);
-      }
+  const headerRightParagraphs = headerRight.querySelectorAll('.default-content-wrapper p');
+  headerRightParagraphs.forEach((element, idx) => {
+    const headerRightPicture = element.querySelector('picture');
+    // header right logo
+    if (idx === 0) {
+      // create the div
+      const headerRightLogo = document.createElement('div');
+      headerRightLogo.classList.add('header-right-logo');
+      // add the logo
+      headerRightLogo.append(headerRightPicture);
+      headerRightLogo.querySelector('img').removeAttribute('width');
+      headerRightLogo.querySelector('img').removeAttribute('height');
+      headerRight.append(headerRightLogo);
+    }
 
-      // header right mobile logo
-      if (idx === 1) {
-        // create the div
-        const mobHeaderRightLogo = document.createElement('div');
-        mobHeaderRightLogo.classList.add('mobile-header-right-logo');
-        // add the mobile logo
-        mobHeaderRightLogo.append(element);
-        mobHeaderRightLogo.querySelector('img').removeAttribute('width');
-        mobHeaderRightLogo.querySelector('img').removeAttribute('height');
-        headerLeft.append(mobHeaderRightLogo);
-        // add the moble logo class
-        contentDiv.classList.add('has-right-logo');
-      }
-    });
-  }
-
-  // add to block
+    // header right mobile logo
+    if (idx === 1) {
+      // create the div
+      const mobHeaderRightLogo = document.createElement('div');
+      mobHeaderRightLogo.classList.add('mobile-header-right-logo');
+      // add the mobile logo
+      mobHeaderRightLogo.append(headerRightPicture);
+      mobHeaderRightLogo.querySelector('img').removeAttribute('width');
+      mobHeaderRightLogo.querySelector('img').removeAttribute('height');
+      headerLeft.append(mobHeaderRightLogo);
+      // add the moble logo class
+      contentDiv.classList.add('has-right-logo');
+    }
+    // remove paragraph container
+    element.remove();
+  });
   block.append(headerSection);
-
-  // // decorate nav DOM
-  // block.textContent = '';
-  // const nav = document.createElement('nav');
-  // nav.id = 'nav';
-  // while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
-
-  // const classes = ['brand', 'sections', 'tools'];
-  // classes.forEach((c, i) => {
-  //   const section = nav.children[i];
-  //   if (section) section.classList.add(`nav-${c}`);
-  // });
-
-  // const navBrand = nav.querySelector('.nav-brand');
-  // const brandLink = navBrand.querySelector('.button');
-  // if (brandLink) {
-  //   brandLink.className = '';
-  //   brandLink.closest('.button-container').className = '';
-  // }
-
-  // const navSections = nav.querySelector('.nav-sections');
-  // if (navSections) {
-  // eslint-disable-next-line max-len
-  //  navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-  //     if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-  //     navSection.addEventListener('click', () => {
-  //       if (isDesktop.matches) {
-  //         const expanded = navSection.getAttribute('aria-expanded') === 'true';
-  //         toggleAllNavSections(navSections);
-  //         navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  //       }
-  //     });
-  //   });
-  // }
-
-  // // hamburger for mobile
-  // const hamburger = document.createElement('div');
-  // hamburger.classList.add('nav-hamburger');
-  // hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-  //     <span class="nav-hamburger-icon"></span>
-  //   </button>`;
-  // hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  // nav.prepend(hamburger);
-  // nav.setAttribute('aria-expanded', 'false');
-  // // prevent mobile nav behavior on window resize
-  // toggleMenu(nav, navSections, isDesktop.matches);
-  // isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
-
-  // const navWrapper = document.createElement('div');
-  // navWrapper.className = 'nav-wrapper';
-  // navWrapper.append(nav);
-  // block.append(navWrapper);
 }
