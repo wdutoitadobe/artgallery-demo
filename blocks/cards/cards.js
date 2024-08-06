@@ -30,7 +30,7 @@ function decorateLinkCards(block) {
     const cardHeadingTitleDiv = createElementWithClasses('div', 'card-heading-title');
     cardHeadingDiv.append(cardHeadingTitleDiv);
 
-    //Heading component
+    // Heading component
     const titleElement = createElementWithClasses('h3', 'card-title', 'overflow-wrap');
     const textDiv = row.children.item(1);
     const h3Text = textDiv.getElementsByTagName('h3')[0].textContent;
@@ -70,7 +70,7 @@ function decorateDefaultCards(block) {
     });
     ul.append(li);
   });
-  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{width: '750'}])));
+  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
 }
