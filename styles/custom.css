@@ -25,6 +25,10 @@ header {
     min-height: var(--header-menu-top-desktop);
 }
 
+.title-auto-blocking {
+    min-height: 30vh;
+}
+
 @media (width <= 991.5px) {
     header {
         min-height: var(--header-menu-top-tablet);
