@@ -7,34 +7,28 @@ function createElementWithClasses(elementType, ...classes) {
   return element;
 }
 
-function addShieldedListeners (footerBottom) {
-  const actionSelectors = {
-    shieldedLogo: "#shielded-logo",
-    shieldedModal: ".shielded-modal",
-    modalCloseButton: ".acpl-modal-close",
-  };
+function addShieldedListeners(footerBottom) {
+  const shieldedLogo = footerBottom.getElementsByClassName('shielded-logo')[0];
+  const shieldedModal = footerBottom.getElementsByClassName('shielded-modal')[0];
+  const modalCloseButton = footerBottom.getElementsByClassName('acpl-modal-close')[0];
 
-  const shieldedLogo = footerBottom.getElementsByClassName("shielded-logo")[0];
-  const shieldedModal = footerBottom.getElementsByClassName("shielded-modal")[0];
-  const modalCloseButton = footerBottom.getElementsByClassName("acpl-modal-close")[0];
+  function closeModal() {
+    shieldedModal.classList.remove('open');
+  }
 
   function openModal(event) {
     event.preventDefault();
-    shieldedModal.classList.add("open");
-    modalCloseButton.addEventListener("click", closeModal);
-    window.addEventListener("message", function closeModalListener(event) {
-      if (event.data === "closeModal") {
+    shieldedModal.classList.add('open');
+    modalCloseButton.addEventListener('click', closeModal);
+    window.addEventListener('message', function closeModalListener(closeEvent) {
+      if (closeEvent.data === 'closeModal') {
         closeModal();
-        window.removeEventListener("message", closeModalListener);
+        window.removeEventListener('message', closeModalListener);
       }
     });
   }
 
-  function closeModal() {
-    shieldedModal.classList.remove("open");
-  }
-
-  shieldedLogo.addEventListener("click", openModal);
+  shieldedLogo.addEventListener('click', openModal);
 }
 
 function decorateFooterButton(footerButtonDiv) {
@@ -151,7 +145,6 @@ export default async function decorate(block) {
   footer.append(decorateFooterButton(buttonDiv));
   footer.append(decorateGroupLinks(groupLinksDiv));
 
-
   // -- process disclaimer and shield -- //
   const footerBottom = document.createElement('div');
   footerBottom.classList.add('footer-bottom');
@@ -233,7 +226,7 @@ export default async function decorate(block) {
     </div>
   </div>`;
 
-  addShieldedListeners(footerBottom)
+  addShieldedListeners(footerBottom);
 
   footer.append(footerBottom);
   block.append(footer);
