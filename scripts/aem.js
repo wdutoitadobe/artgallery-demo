@@ -432,6 +432,27 @@ function decorateParagraphs(main) {
 }
 
 /**
+ * Decorates all paragraphs in a container element.
+ * @param {Element} main The container element
+ */
+function decoratePictures(main) {
+  main.querySelectorAll('div.section > div > p > picture').forEach((picture) => {
+    const image = picture.querySelector('img');
+    image.classList.add('image-fluid');
+    image.removeAttribute('height');
+    image.removeAttribute('width');
+    const paragraphContainer = picture.parentElement;
+    paragraphContainer.classList.add('acpl-image');
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.classList.add('image-description', 'container-content');
+    const descriptionParagraph = document.createElement('span');
+    descriptionParagraph.innerText = image.alt;
+    descriptionContainer.append(descriptionParagraph);
+    paragraphContainer.append(descriptionContainer);
+  });
+}
+
+/**
  * Decorates all sections in a container element.
  * @param {Element} main The container element
  */
@@ -687,6 +708,7 @@ export {
   decorateBlocks,
   decorateButtons,
   decorateParagraphs,
+  decoratePictures,
   decorateIcons,
   decorateSections,
   decorateTemplateAndTheme,

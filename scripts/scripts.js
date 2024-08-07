@@ -4,6 +4,7 @@ import {
   loadFooter,
   decorateButtons,
   decorateIcons,
+  decoratePictures,
   decorateParagraphs,
   decorateSections,
   decorateBlocks,
@@ -64,10 +65,11 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
-  decorateParagraphs(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  decorateParagraphs(main);
+  decoratePictures(main);
 }
 
 /**

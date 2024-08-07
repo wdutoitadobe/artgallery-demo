@@ -240,8 +240,11 @@ export default async function decorate(block) {
       headerRightLogo.classList.add('header-right-logo');
       // add the logo
       headerRightLogo.append(headerRightPicture);
-      headerRightLogo.querySelector('img').removeAttribute('width');
-      headerRightLogo.querySelector('img').removeAttribute('height');
+      const img = headerRightLogo.querySelector('img');
+      if (img) {
+        img.removeAttribute('width');
+        img.removeAttribute('height');
+      }
       headerRight.append(headerRightLogo);
     }
 
@@ -252,8 +255,11 @@ export default async function decorate(block) {
       mobHeaderRightLogo.classList.add('mobile-header-right-logo');
       // add the mobile logo
       mobHeaderRightLogo.append(headerRightPicture);
-      mobHeaderRightLogo.querySelector('img').removeAttribute('width');
-      mobHeaderRightLogo.querySelector('img').removeAttribute('height');
+      const img = mobHeaderRightLogo.querySelector('img');
+      if (img) {
+        img.removeAttribute('width');
+        img.removeAttribute('height');
+      }
       headerLeft.append(mobHeaderRightLogo);
       // add the moble logo class
       contentDiv.classList.add('has-right-logo');
