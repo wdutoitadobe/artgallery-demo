@@ -422,6 +422,16 @@ function decorateIcons(element, prefix = '') {
 }
 
 /**
+ * Decorates all paragraphs in a container element.
+ * @param {Element} main The container element
+ */
+function decorateParagraphs(main) {
+  main.querySelectorAll('div > p').forEach((paragraph) => {
+    paragraph.classList.add('acpl-rich-text-content');
+  });
+}
+
+/**
  * Decorates all sections in a container element.
  * @param {Element} main The container element
  */
@@ -676,6 +686,7 @@ export {
   decorateBlock,
   decorateBlocks,
   decorateButtons,
+  decorateParagraphs,
   decorateIcons,
   decorateSections,
   decorateTemplateAndTheme,
