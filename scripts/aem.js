@@ -436,19 +436,22 @@ function decorateParagraphs(main) {
  * @param {Element} main The container element
  */
 function decoratePictures(main) {
-  main.querySelectorAll('div.section > div > p > picture').forEach((picture) => {
+  main.querySelectorAll('div.section > div > picture').forEach((picture) => {
     const image = picture.querySelector('img');
     image.classList.add('image-fluid');
     image.removeAttribute('height');
     image.removeAttribute('width');
     const paragraphContainer = picture.parentElement;
     paragraphContainer.classList.add('acpl-image');
-    const descriptionContainer = document.createElement('div');
-    descriptionContainer.classList.add('image-description', 'container-content');
-    const descriptionParagraph = document.createElement('span');
-    descriptionParagraph.innerText = image.alt;
-    descriptionContainer.append(descriptionParagraph);
-    paragraphContainer.append(descriptionContainer);
+    const { alt } = image;
+    if (alt) {
+      const descriptionContainer = document.createElement('div');
+      descriptionContainer.classList.add('image-description', 'container-content');
+      const descriptionParagraph = document.createElement('span');
+      descriptionParagraph.innerText = image.alt;
+      descriptionContainer.append(descriptionParagraph);
+      paragraphContainer.append(descriptionContainer);
+    }
   });
 }
 

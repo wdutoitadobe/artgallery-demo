@@ -1,19 +1,176 @@
-/* stylelint-disable max-line-length */
-
-/* @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-} */
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-ThinIt.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-XLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-XLightIt.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-LightIt.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-RegularIt.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-MediumIt.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-BoldIt.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-XBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-XBoldIt.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "National 2";
+    src: url("./ak/fonts/National2-BlackIt.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./ak/fonts/Ubuntu-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0;
+    text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}

@@ -26,17 +26,32 @@ header {
 }
 
 .title-auto-blocking {
-    min-height: 30vh;
+    min-height: 15rem;
+}
+
+main .section {
+    max-width: 1465px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
 }
 
 @media (width <= 991.5px) {
     header {
         min-height: var(--header-menu-top-tablet);
     }
+
+    main .section {
+        max-width: 1152px;
+        padding: 1.5rem .5rem;
+    }
 }
 
 @media (width <= 576px) {
     header {
         min-height: var(--header-menu-top-mobile);
+    }
+
+    main .section {
+        padding: .5rem;
     }
 }
