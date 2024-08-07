@@ -7,7 +7,9 @@ function createElementWithClasses(elementType, ...classes) {
 }
 
 function decorateLinkCards(block) {
+  block.classList.add('cards');
   const blockDiv = document.createElement('div');
+  blockDiv.classList.add('cards-list');
   [...block.children].forEach((row) => {
     // Wrapper elements
     const cardDiv = document.createElement('div');
@@ -36,13 +38,13 @@ function decorateLinkCards(block) {
     const h3Text = textDiv.getElementsByTagName('h3')[0].textContent;
     titleElement.innerHTML = `
       <span class="acpl-content-type"></span>
-                <span class="main-heading-section">
-                  <span>
-                    <span class="heading">
-                      <span class="">${h3Text}</span>
-                    </span>
-                  </span>
-                </span>`;
+      <span class="main-heading-section">
+        <span>
+          <span class="heading">
+            <span class="">${h3Text}</span>
+          </span>
+        </span>
+      </span>`;
     cardHeadingTitleDiv.append(titleElement);
 
     // Paragraph component
