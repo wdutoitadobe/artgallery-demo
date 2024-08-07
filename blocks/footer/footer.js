@@ -7,6 +7,36 @@ function createElementWithClasses(elementType, ...classes) {
   return element;
 }
 
+function addShieldedListeners (footerBottom) {
+  const actionSelectors = {
+    shieldedLogo: "#shielded-logo",
+    shieldedModal: ".shielded-modal",
+    modalCloseButton: ".acpl-modal-close",
+  };
+
+  const shieldedLogo = footerBottom.getElementsByClassName("shielded-logo")[0];
+  const shieldedModal = footerBottom.getElementsByClassName("shielded-modal")[0];
+  const modalCloseButton = footerBottom.getElementsByClassName("acpl-modal-close")[0];
+
+  function openModal(event) {
+    event.preventDefault();
+    shieldedModal.classList.add("open");
+    modalCloseButton.addEventListener("click", closeModal);
+    window.addEventListener("message", function closeModalListener(event) {
+      if (event.data === "closeModal") {
+        closeModal();
+        window.removeEventListener("message", closeModalListener);
+      }
+    });
+  }
+
+  function closeModal() {
+    shieldedModal.classList.remove("open");
+  }
+
+  shieldedLogo.addEventListener("click", openModal);
+}
+
 function decorateFooterButton(footerButtonDiv) {
   const footerButton = document.createElement('button');
 
@@ -121,7 +151,6 @@ export default async function decorate(block) {
   footer.append(decorateFooterButton(buttonDiv));
   footer.append(decorateGroupLinks(groupLinksDiv));
 
-  block.append(footer);
 
   // -- process disclaimer and shield -- //
   const footerBottom = document.createElement('div');
@@ -185,14 +214,14 @@ export default async function decorate(block) {
             <i class="acpl-icon acpl-logo nz-govt"></i>
           </span>
         </a>
-        <a class="unstyled" href="#" target="_self" rel="">
+        <a class="unstyled shielded-logo" href="#" target="_self" rel="">
           <span>
             ${picture.innerHTML}
           </span>
         </a>
         <div class="acpl-modal shielded-modal" role="dialog" aria-modal="true">
           <div class="acpl-modal-dialog">
-            <iframe src="${iframeMetadata.href}" sandbox="allow-forms allow-scripts allow-same-origin allow-popups" width="310" height="455" frameborder="0"></iframe>
+            <iframe src="${iframeMetadata.children.item(0).href}" sandbox="allow-forms allow-scripts allow-same-origin allow-popups" width="310" height="455" frameborder="0"></iframe>
             <button type="button" role="button" class="acpl-button secondary no-border icon left no-text acpl-modal-close" aria-label="Close image">
               <i class="acpl-icon utility-cross colored" style="background-color: rgb(115, 115, 113);"></i>
               <span class=""></span>
@@ -203,5 +232,9 @@ export default async function decorate(block) {
   })}
     </div>
   </div>`;
+
+  addShieldedListeners(footerBottom)
+
   footer.append(footerBottom);
+  block.append(footer);
 }
