@@ -1,5 +1,5 @@
 # AK BID Edge Delivery Services Website...
-A small demo showing how you can integrate with the 9Auckland Council Design System](https://designsystem.aucklandcouncil.govt.nz/index.html?path=/docs/our-design-system--guidelines), a UI Pattern Library, and Edge Delivery Services.
+A small demo showing how you can integrate with the [Auckland Council Design System](https://designsystem.aucklandcouncil.govt.nz/index.html?path=/docs/our-design-system--guidelines), a UI Pattern Library, and Edge Delivery Services.
 
 
 ## Environments
