@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="B">
+      <g id="bach">
+        <g id="Bach_cottage" data-name="Bach cottage">
+          <path class="cls-1" d="m0,58.5h64v-5h-11v-22H11v22H0v5Zm33-23h7v8h-7v-8Zm-18,0h10v18h-10v-18Z"/>
+          <polygon class="cls-1" points="15 5.5 15 13.5 8 13.5 8 29.5 56 29.5 56 13.5 25 13.5 25 5.5 15 5.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

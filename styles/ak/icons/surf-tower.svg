@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="S">
+      <g id="surf-tower">
+        <path id="Surf_tower" data-name="Surf tower" class="cls-1" d="m43.5,23h5V6L32.5,0l-16,6v17h5l-10,41h6l15-21,14,21h6l-9-41Zm-22,25l3-13,4,5-7,8Zm4-18l2-7h10l2,7-7,7-7-7Zm11,10l4-5,2,13-6-8Zm6-23h-20v-7h20v7Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

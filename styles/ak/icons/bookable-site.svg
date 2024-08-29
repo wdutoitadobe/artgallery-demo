@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="B">
+      <g id="bookable-site">
+        <g id="Bookable_site" data-name="Bookable site">
+          <path class="cls-1" d="m32,0C14.33,0,0,14.33,0,32s14.33,32,32,32,32-14.33,32-32S49.67,0,32,0Zm0,60c-15.46,0-28-12.54-28-28S16.54,4,32,4s28,12.54,28,28-12.54,28-28,28Z"/>
+          <path class="cls-1" d="m27.57,20.26c-1.67,1.32-3.56,2.36-5.57,3.06v5.68c3.25-1,5.61-1.88,8-4v23h7V15h-5.31c-.83,2.12-2.26,3.95-4.12,5.26Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

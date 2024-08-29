@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="D">
+      <g id="dump-station">
+        <g id="Dump_station" data-name="Dump station">
+          <path class="cls-1" d="m7,30.62c0,1.59.81,2.38,2.46,2.38s2.54-.79,2.54-2.38c0-1.74-.85-2.62-2.54-2.62s-2.46.88-2.46,2.62"/>
+          <polyline class="cls-1" points="1 64 63 64 63 37 51 37 51 44 57 44 57 59 35 59 35 44 41 44 41 37 1 37 1 64"/>
+          <g>
+            <path class="cls-1" d="m42,0h-16c-13,0-15,4-15,4v21h-5l-1,1,1,1h22v-1c0-3.87,3.13-7,7-7s7,3.13,7,7v1h2v21h-3l5,6,5-6h-3v-21c11,0,12,0,12-4V5c0-2,0-5-18-5Zm-15,13h-10v-7h10v7Zm26,0h-18v-7h18v7Z"/>
+            <path class="cls-1" d="m35,21c-2.76,0-5,2.24-5,5s2.24,5,5,5,5-2.24,5-5-2.24-5-5-5Zm0,7c-1.1,0-2-.9-2-2s.9-2,2-2,2,.9,2,2-.9,2-2,2Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

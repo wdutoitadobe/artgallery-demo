@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="I">
+      <g id="interpretation">
+        <g id="Interp_sign" data-name="Interp sign">
+          <path class="cls-1" d="m14.4,0v46.93h35.2V0H14.4Zm18.13,32c.71.04,1.42-.1,2.07-.39.43-.16.84-.35,1.25-.55l-1.56,4.26c-1.57.55-3.21.87-4.87.95-2.85.16-4.17-1.35-4.21-3.09.17-1.7.63-3.37,1.37-4.92.16-.35.78-1.55.78-1.55h-3.35v-.32c2.08-1.35,4.02-2.91,5.77-4.67.22-.26,3.2-3.57,3.2-3.57h5.96c-.31.47-5.58,8.17-6.59,10.39-1.01,2.22-1.44,3.61.19,3.48Zm5.33-16c-1.77,0-3.2-.96-3.2-2.13s1.43-2.13,3.2-2.13,3.2.95,3.2,2.13-1.43,2.13-3.2,2.13Z"/>
+          <rect class="cls-1" x="27.2" y="49.07" width="8.53" height="14.93"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

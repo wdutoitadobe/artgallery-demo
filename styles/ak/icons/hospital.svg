@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="H">
+      <g id="hospital">
+        <path class="cls-1" d="m62.06,24.4h-22.45V1.95C39.61.87,38.74,0,37.66,0h-11.32c-1.08,0-1.95.87-1.95,1.95v22.44H1.95c-1.08,0-1.95.87-1.95,1.95v11.32c0,1.08.87,1.95,1.95,1.95h22.44v22.44c0,1.08.87,1.95,1.95,1.95h11.32c1.08,0,1.95-.87,1.95-1.95v-22.44h22.44c1.08,0,1.95-.87,1.95-1.95v-11.32c0-1.07-.86-1.94-1.93-1.94,0,0,0,0,0,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

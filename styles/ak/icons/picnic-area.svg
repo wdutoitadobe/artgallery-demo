@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="P">
+      <g id="picnic-area">
+        <g id="Picnic_area_picnic_table" data-name="Picnic area picnic table">
+          <path class="cls-1" d="m7,10h50v6h-11l3.78,13h14.22v6h-12l6.92,19h-6.92l-7-19h-26l-7,19h-7l7-19H0v-6h14.22l3.78-13H7v-6Zm32,6h-14l-4,13h22l-4-13Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

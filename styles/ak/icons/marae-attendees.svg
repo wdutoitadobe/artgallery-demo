@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="M">
+      <g id="marae-attendees">
+        <g id="Layer_2" data-name="Layer 2">
+          <polygon class="cls-1" points="64 36.01 64 30.55 36.99 13.98 36.5 19.13 51.82 28.53 51.82 51.65 12.18 51.65 12.18 28.54 27.41 19.18 26.96 14.01 0 30.55 0 36.01 7.37 31.49 7.37 51.65 2.55 51.65 2.55 56.46 61.45 56.46 61.45 51.65 56.63 51.65 56.63 31.49 64 36.01"/>
+          <polygon class="cls-1" points="34.93 21.02 28.97 21.02 27.79 7.54 36.2 7.54 34.93 21.02"/>
+          <circle class="cls-1" cx="19.45" cy="36.11" r="3.09"/>
+          <path class="cls-1" d="m19.45,39.65c-2.64,0-4.78,2.13-4.78,4.77,0,0,0,0,0,0v4.72h9.56v-4.72c0-2.64-2.14-4.78-4.78-4.78Z"/>
+          <circle class="cls-1" cx="32" cy="36.11" r="3.09"/>
+          <path class="cls-1" d="m32,39.65c-2.64,0-4.77,2.14-4.77,4.78v4.72h9.55v-4.72c0-2.64-2.14-4.78-4.78-4.78Z"/>
+          <circle class="cls-1" cx="44.55" cy="36.11" r="3.09"/>
+          <path class="cls-1" d="m44.55,39.65c-2.64,0-4.78,2.14-4.78,4.78h0v4.72h9.55v-4.72c0-2.64-2.14-4.78-4.77-4.78Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

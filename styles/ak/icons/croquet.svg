@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="croquet">
+        <g>
+          <circle class="cls-1" cx="44.85" cy="44.29" r="6.18"/>
+          <path class="cls-1" d="m34.95,53.1l-6.38-1.8L42.66,1.43,37.61,0l-14.09,49.88-5.85-1.65s-2.17-.61-2.78,1.55l-1.83,6.48c-.61,2.17,1.59,2.79,1.59,2.79l17.27,4.88s2.16.61,2.79-1.62l1.81-6.42c.61-2.16-1.59-2.78-1.59-2.78Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

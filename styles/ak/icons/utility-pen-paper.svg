@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #373535;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="Layer_448" data-name="Layer 448">
+      <g>
+        <polygon class="cls-1" points=".45 8.46 .45 63.92 57.2 63.92 57.2 36.83 48.86 36.83 48.86 56.95 8.71 56.95 8.71 16.72 28.31 16.72 28.31 8.46 .45 8.46"/>
+        <polygon class="cls-1" points="51.65 1.82 45.22 8.48 56.98 19.97 63.47 13.33 51.65 1.82"/>
+        <polygon class="cls-1" points="42.84 10.31 54.87 22.12 31.77 45.24 17.22 48.44 19.2 34.41 42.84 10.31"/>
+      </g>
+    </g>
+  </g>
+</svg>

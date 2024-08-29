@@ -43,7 +43,7 @@ function sampleRUM(checkpoint, data) {
                 .shift()
                 .replace(/at ([^ ]+) \((.+)\)/, '$1@$2')
                 .trim();
-            } catch (err) {
+            } catch {
               /* error structure was not as expected */
             }
             sampleRUM('error', errData);
@@ -88,7 +88,7 @@ function sampleRUM(checkpoint, data) {
       window.hlx.rum.collector(checkpoint, data, timeShift());
     }
     document.dispatchEvent(new CustomEvent('rum', { detail: { checkpoint, data } }));
-  } catch (error) {
+  } catch {
     // something went wrong
   }
 }
@@ -422,6 +422,40 @@ function decorateIcons(element, prefix = '') {
 }
 
 /**
+ * Decorates all paragraphs in a container element.
+ * @param {Element} main The container element
+ */
+function decorateParagraphs(main) {
+  main.querySelectorAll('div > p').forEach((paragraph) => {
+    paragraph.classList.add('acpl-rich-text-content');
+  });
+}
+
+/**
+ * Decorates all paragraphs in a container element.
+ * @param {Element} main The container element
+ */
+function decoratePictures(main) {
+  main.querySelectorAll('div.section > div > picture').forEach((picture) => {
+    const image = picture.querySelector('img');
+    image.classList.add('image-fluid');
+    image.removeAttribute('height');
+    image.removeAttribute('width');
+    const paragraphContainer = picture.parentElement;
+    paragraphContainer.classList.add('acpl-image');
+    const { alt } = image;
+    if (alt) {
+      const descriptionContainer = document.createElement('div');
+      descriptionContainer.classList.add('image-description', 'container-content');
+      const descriptionParagraph = document.createElement('span');
+      descriptionParagraph.innerText = image.alt;
+      descriptionContainer.append(descriptionParagraph);
+      paragraphContainer.append(descriptionContainer);
+    }
+  });
+}
+
+/**
  * Decorates all sections in a container element.
  * @param {Element} main The container element
  */
@@ -676,6 +710,8 @@ export {
   decorateBlock,
   decorateBlocks,
   decorateButtons,
+  decorateParagraphs,
+  decoratePictures,
   decorateIcons,
   decorateSections,
   decorateTemplateAndTheme,

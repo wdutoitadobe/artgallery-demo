@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ee3129;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Infographic_icons" data-name="Infographic icons">
+    <g id="prohibited-line">
+      <path class="cls-1" d="m4.83,0C3.09,1.47,1.48,3.09,0,4.82l59.17,59.18c1.74-1.48,3.36-3.09,4.83-4.83L4.83,0Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,66 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
-export default function decorate(block) {
+function createElementWithClasses(elementType, ...classes) {
+  const element = document.createElement(elementType);
+  element.classList.add(...classes);
+  return element;
+}
+
+function decorateLinkCards(block) {
+  block.classList.add('cards');
+  const blockDiv = document.createElement('div');
+  blockDiv.classList.add('cards-list');
+  [...block.children].forEach((row) => {
+    // Wrapper elements
+    const cardDiv = document.createElement('div');
+    const linkDiv = row.children.item(0);
+    const href = linkDiv.getElementsByTagName('a')[0].getAttribute('href');
+
+    const newLinkElement = createElementWithClasses('a', 'card-link', 'unstyled');
+    newLinkElement.href = href;
+    newLinkElement.setAttribute('target', '_self');
+    newLinkElement.setAttribute('rel', '');
+
+    const outerSpan = document.createElement('span');
+    newLinkElement.append(outerSpan);
+    const outerDiv = createElementWithClasses('div', 'acpl-card', 'primary');
+    outerSpan.append(outerDiv);
+    const cardBodyDiv = createElementWithClasses('div', 'card-body');
+    outerDiv.append(cardBodyDiv);
+    const cardHeadingDiv = createElementWithClasses('div', 'card-heading');
+    cardBodyDiv.append(cardHeadingDiv);
+    const cardHeadingTitleDiv = createElementWithClasses('div', 'card-heading-title');
+    cardHeadingDiv.append(cardHeadingTitleDiv);
+
+    // Heading component
+    const titleElement = createElementWithClasses('h3', 'card-title', 'overflow-wrap');
+    const textDiv = row.children.item(1);
+    const h3Text = textDiv.getElementsByTagName('h3')[0].textContent;
+    titleElement.innerHTML = `
+      <span class="acpl-content-type"></span>
+      <span class="main-heading-section">
+        <span>
+          <span class="heading">
+            <span class="">${h3Text}</span>
+          </span>
+        </span>
+      </span>`;
+    cardHeadingTitleDiv.append(titleElement);
+
+    // Paragraph component
+    const pElement = textDiv.getElementsByTagName('p')[0];
+    pElement.classList.add('acpl-rich-text-content', 'overflow-wrap');
+    cardBodyDiv.append(pElement);
+
+    // Append to main div
+    cardDiv.append(newLinkElement);
+    blockDiv.append(cardDiv);
+  });
+  block.textContent = '';
+  block.append(blockDiv);
+}
+
+function decorateDefaultCards(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
@@ -15,4 +75,12 @@ export default function decorate(block) {
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
+}
+
+export default function decorate(block) {
+  if (block.classList.contains('links')) {
+    decorateLinkCards(block);
+  } else {
+    decorateDefaultCards(block);
+  }
 }

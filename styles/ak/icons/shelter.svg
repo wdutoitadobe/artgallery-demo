@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="S">
+      <g id="shelter">
+        <g id="Shelter_visitor_shelter" data-name="Shelter visitor shelter">
+          <path class="cls-1" d="m32,16.5c2.21,0,4,1.79,4,4s-1.79,4-4,4-4-1.79-4-4,1.79-4,4-4"/>
+          <path class="cls-1" d="m38,41.5v-11h-1v30c0,1.1-.9,2-2,2s-2-.9-2-2v-17h-2v17c0,1.1-.9,2-2,2s-2-.9-2-2v-30h-1v11c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5v-11.11c-.07-2.63,2-4.82,4.63-4.89,0,0,.02,0,.02,0h8.62c2.67.05,4.79,2.26,4.73,4.93,0,.02,0,.05,0,.07v11c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5"/>
+          <g id="Surf_club" data-name="Surf club">
+            <polyline class="cls-1" points="0 28.89 31.92 1.5 64 28.82 63.92 35.06 31.88 7.73 0 35.09 0 28.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

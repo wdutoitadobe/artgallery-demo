@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="C">
+      <g id="close-gate">
+        <g id="Close_gate" data-name="Close gate">
+          <path class="cls-1" d="m60.54,23.5c1.98,0,3.46,1.25,3.46,2.39v29.47c0,.77-.91,2.13-3.46,2.13s-3.55-1.94-3.55-2.38v-29.24c0-1.14.91-2.37,3.55-2.37m-17.54-14l3-3,8,8v-6l4.01,4v9h-9.01l-4-4h6l-8-8ZM8.08,55.4l31.92-17.04V6.5L7,24.5c-1.08-.35-2.2-.55-3.34-.57-2.73,0-3.66,2.02-3.66,2.35v28.88c0,.42,1.02,2.35,3.66,2.35s3.58-1.34,3.58-2.1v-.3l.85.3Zm.58-4.59v-5.23l28.35-15.09v5.01l-28.35,15.31Zm-.65-8.31v-5l29-16v5l-29,16Zm0-9v-5l29-16v5l-29,16Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

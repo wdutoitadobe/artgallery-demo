@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="grid">
+      <g>
+        <rect class="cls-1" y=".04" width="27.58" height="27.58"/>
+        <rect class="cls-1" x="36.42" y=".04" width="27.58" height="27.58"/>
+        <rect class="cls-1" y="36.46" width="27.58" height="27.58"/>
+        <rect class="cls-1" x="36.42" y="36.46" width="27.58" height="27.58"/>
+      </g>
+    </g>
+  </g>
+</svg>

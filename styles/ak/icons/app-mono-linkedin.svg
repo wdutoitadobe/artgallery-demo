@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Social_media_and_app" data-name="Social media and app">
+    <g id="linkedin">
+      <g>
+        <path class="cls-1" d="m34.66,28.74v-.09s-.05.06-.06.09h.06Z"/>
+        <path class="cls-1" d="m0,0v64h64V0H0Zm19.91,53.17h-9.5v-28.57h9.5v28.57Zm-4.75-32.47h-.06c-3.19,0-5.25-2.19-5.25-4.94s2.12-4.94,5.37-4.94,5.25,2.13,5.31,4.94c0,2.74-2.06,4.94-5.37,4.94Zm39,32.47h-9.5v-15.28c0-3.84-1.37-6.46-4.81-6.46-2.63,0-4.19,1.76-4.87,3.47-.25.61-.32,1.46-.32,2.32v15.95h-9.5s.13-25.89,0-28.57h9.5v4.05c1.26-1.94,3.51-4.72,8.56-4.72,6.25,0,10.94,4.08,10.94,12.86v16.38Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

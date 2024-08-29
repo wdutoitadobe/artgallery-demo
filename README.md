@@ -1,9 +1,14 @@
-# Your Project's Title...
-Your project's description...
+# AK BID Edge Delivery Services Website...
+A small demo showing how you can integrate with the [Auckland Council Design System](https://designsystem.aucklandcouncil.govt.nz/index.html?path=/docs/our-design-system--guidelines), a UI Pattern Library, and Edge Delivery Services.
+
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+### Main
+- Preview: https://main--ak-bid--apsdemos.hlx.page/
+- Live: https://main--ak-bid--apsdemos.hlx.live/
+### Develop
+- Preview: https://develop--ak-bid--apsdemos.hlx.page/
+- Live: https://develop--ak-bid--apsdemos.hlx.live/
 
 ## Installation
 

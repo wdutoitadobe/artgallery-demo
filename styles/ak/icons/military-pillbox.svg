@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="M">
+      <g id="military-pillbox">
+        <path id="World_war_II_pillbox_pillbox" data-name="World war II pillbox pillbox" class="cls-1" d="m54.64,9.37c-12.5-12.5-32.77-12.5-45.27,0-12.5,12.5-12.5,32.76,0,45.25,12.5,12.5,32.77,12.5,45.27,0,12.48-12.51,12.48-32.75,0-45.25m-2.95,36.87l-14.25-14.24,14.25-14.24c6.14,8.5,6.14,19.98,0,28.49m-5.44-33.92l-14.25,14.24-14.25-14.25c8.51-6.14,19.99-6.14,28.5,0m-33.93,5.44l14.25,14.24-14.25,14.24c-6.14-8.5-6.14-19.99,0-28.49m5.43,33.92l14.25-14.24,14.25,14.24c-8.51,6.14-19.99,6.14-28.5,0"/>
+      </g>
+    </g>
+  </g>
+</svg>

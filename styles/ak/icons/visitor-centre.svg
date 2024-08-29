@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="V">
+      <g id="visitor-centre">
+        <g id="Visitor_centre_information_centre_information_office" data-name="Visitor centre information centre information office">
+          <path class="cls-1" d="m58,31v31H6v-31H0L32,2l32,29h-6Zm-24-5.5c0-1.38,1.79-2.5,4-2.5s4,1.12,4,2.5-1.79,2.5-4,2.5-4-1.12-4-2.5m6,4.5c-.39.59-6.92,9.71-8.18,12.45s-1.82,4.44.18,4.34c.89.05,1.78-.11,2.59-.48.53-.2,1.05-.43,1.55-.69l-1.9,5.19c-1.96.68-4.01,1.08-6.08,1.19-3.56.2-5.22-1.66-5.27-3.8s1.52-5.62,1.71-6.06,1-1.91,1-1.91h-4.22v-.39s5.12-3.3,7.27-5.84c.27-.32,3.35-4,3.35-4h8Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

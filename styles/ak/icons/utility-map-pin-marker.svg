@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Utility_and_system_icons" data-name="Utility and system icons">
+    <g id="map-pin-marker">
+      <path class="cls-1" d="m29.53,62.71C11.37,36.38,8,33.68,8,24,8,10.75,18.74,0,32,0s24,10.75,24,24c0,9.68-3.37,12.38-21.54,38.71-.94,1.36-2.81,1.7-4.17.76-.3-.21-.55-.46-.76-.76Zm2.47-28.71c5.52,0,10-4.48,10-10,0-5.52-4.48-10-10-10s-10,4.48-10,10h0c0,5.52,4.48,10,10,10Z"/>
+    </g>
+  </g>
+</svg>

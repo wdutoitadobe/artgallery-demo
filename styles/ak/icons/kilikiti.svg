@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="AC_icons" data-name="AC icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061a2f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Informational_icons" data-name="Informational icons">
+    <g id="K">
+      <g id="kilikiti">
+        <g id="Kilikiti_Icon" data-name="Kilikiti Icon">
+          <path class="cls-1" d="m50.95.12L11.37,58.54c-.18.48-.12,1.01.16,1.44.42.69,1.14,2.11,1.6,2.61L52,.48,13.95,62.97c1.35.4,4.15.98,4.15.98,0,0,.51.33,1.04-.72S52.73.96,52.73.96c0,0-.48-1.36-1.78-.85Z"/>
+          <circle class="cls-1" cx="40.88" cy="53.75" r="3.8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
