@@ -1,14 +1,14 @@
-# AK BID Edge Delivery Services Website...
+# AK Art Gallery Edge Delivery Services Website...
 A small demo showing how you can integrate with the [Auckland Council Design System](https://designsystem.aucklandcouncil.govt.nz/index.html?path=/docs/our-design-system--guidelines), a UI Pattern Library, and Edge Delivery Services.
 
 
 ## Environments
 ### Main
-- Preview: https://main--ak-bid--apsdemos.hlx.page/
-- Live: https://main--ak-bid--apsdemos.hlx.live/
+- Preview: https://main--ak-artgallery--apsdemos.aem.page/
+- Live: https://main--ak-artgallery--apsdemos.aem.live/
 ### Develop
-- Preview: https://develop--ak-bid--apsdemos.hlx.page/
-- Live: https://develop--ak-bid--apsdemos.hlx.live/
+- Preview: https://develop--ak-artgallery--apsdemos.aem.page/
+- Live: https://develop--ak-artgallery--apsdemos.aem.live/
 
 ## Installation
 
