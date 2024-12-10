@@ -196,10 +196,18 @@ export default async function decorate(block) {
 
   // populate the header content
   const navItemsDiv = headerSection.querySelector('.navigation');
-  const contentNavLinks = fragment.querySelectorAll('a');
+  const contentNavLinks = fragment.querySelectorAll('p.acpl-rich-text-content:not(.button-container) a');
   contentNavLinks.forEach(link => {
     const decoratedNavItem = createNavItem(link, navItem); // Generate a nav item for each link
     navItemsDiv.appendChild(decoratedNavItem); // Append it to the container
+  });
+
+  const navItemsSecondaryDiv = headerSection.querySelector('.navigation-secondary');
+  const contentSecondaryNavLinks = fragment.querySelectorAll('p.button-container.acpl-rich-text-content a');
+  contentSecondaryNavLinks.forEach(link => {
+    link.className = 'navigation-item';
+    link.textContent = link.textContent.trim();
+    navItemsSecondaryDiv.appendChild(link); // Append it to the container
   });
 
   // while (fragment.firstElementChild) contentDiv.append(fragment.firstElementChild);
