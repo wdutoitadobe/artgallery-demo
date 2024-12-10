@@ -81,10 +81,15 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
 
   // -- peterocks -- //
-  const acplroot = document.createElement('div');
-  acplroot.classList.add('acpl');
-  while (document.body.firstChild) acplroot.append(document.body.firstChild);
-  document.body.appendChild(acplroot);
+  const artSiteRoot = document.createElement('div');
+  artSiteRoot.id = "root"
+
+  const artSiteBase = document.createElement('div');
+  artSiteBase.classList.add('base');
+  artSiteRoot.append(artSiteBase);
+
+  while (document.body.firstChild) artSiteBase.append(document.body.firstChild);
+  document.body.appendChild(artSiteRoot);
   // -- peterocks -- //
 
   const main = doc.querySelector('main');

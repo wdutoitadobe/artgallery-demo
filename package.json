@@ -1,5 +1,5 @@
 {
-  "name": "@adobe/aem-boilerplate",
+  "name": "@apsdemos/ak-art-gallery",
   "private": true,
   "version": "1.3.0",
   "description": "Starter project for Adobe Helix",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adobe/aem-boilerplate.git"
+    "url": "git+https://github.com/apsdemos/ak-artgallery.git"
   },
   "author": "Adobe",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/adobe/aem-boilerplate/issues"
+    "url": "https://github.com/apsdemos/ak-artgallery/issues"
   },
-  "homepage": "https://github.com/adobe/aem-boilerplate#readme",
+  "homepage": "https://github.com/apsdemos/ak-artgallery#readme",
   "devDependencies": {
     "@babel/eslint-parser": "7.24.8",
     "@typescript-eslint/eslint-plugin": "^8.0.0",

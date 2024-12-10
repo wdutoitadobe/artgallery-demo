@@ -634,6 +634,8 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
+  //const h1 = main.querySelector('h1');
+ // const picture = main.querySelector('picture');
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);
