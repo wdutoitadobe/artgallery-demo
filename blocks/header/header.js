@@ -1,7 +1,7 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-import { headerWrapper } from './nav-wrapper.js';
-import { navItem } from './nav-item.js';
+import { headerWrapperHtml } from './nav-wrapper-html.js';
+import { navItemHtml } from './nav-item-html.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
@@ -192,18 +192,18 @@ export default async function decorate(block) {
   // create the header structure
   const headerSection = document.createElement('div');
   headerSection.classList.add('top-headroom', 'headroom-wrapper');
-  headerSection.innerHTML = headerWrapper;
+  headerSection.innerHTML = headerWrapperHtml;
 
   // populate the header content
   const navItemsDiv = headerSection.querySelector('.navigation');
-  const contentNavLinks = fragment.querySelectorAll('p.acpl-rich-text-content:not(.button-container) a');
+  const contentNavLinks = fragment.querySelectorAll('p:not(.button-container) a');
   contentNavLinks.forEach(link => {
-    const decoratedNavItem = createNavItem(link, navItem); // Generate a nav item for each link
+    const decoratedNavItem = createNavItem(link, navItemHtml); // Generate a nav item for each link
     navItemsDiv.appendChild(decoratedNavItem); // Append it to the container
   });
 
   const navItemsSecondaryDiv = headerSection.querySelector('.navigation-secondary');
-  const contentSecondaryNavLinks = fragment.querySelectorAll('p.button-container.acpl-rich-text-content a');
+  const contentSecondaryNavLinks = fragment.querySelectorAll('p.button-container a');
   contentSecondaryNavLinks.forEach(link => {
     link.className = 'navigation-item';
     link.textContent = link.textContent.trim();

@@ -1,4 +1,4 @@
-export const navItem = `<div class="navigation-item">
+export const navItemHtml = `<div class="navigation-item">
     <div class="navigation-link desktop"><h5 class="label">Visit</h5></div>
     <button class="navigation-link mobile"><h5 class="label">Visit</h5></button>
     <div class="sub-navigation">
