@@ -1,21 +1,17 @@
-export const carouselWrapperHtml = `<div class="carousel-block-inner">
-    <div class="slick-slider slick-initialized" dir="ltr">
-        <button data-role="none" class="slick-arrow slick-prev" style="display: block;">
-            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="true" name="arrow" width="25" height="25"
-                 class="icon" type="default"><title>Arrow</title>
-                <use xlink:href="/static/assets/images/sprite.5951385a21d003da0d50.svg#arrow"></use>
-            </svg>
-        </button>
-        <div class="slick-list">
-            <div class="slick-track" style="width: 14300px; left: -5500px; opacity: 1;">
-             
-            </div>
-        </div>
-        <button data-role="none" class="slick-arrow slick-next" style="display: block;">
-            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="true" name="arrow" width="25" height="25"
-                 class="icon" type="default"><title>Arrow</title>
-                <use xlink:href="/static/assets/images/sprite.5951385a21d003da0d50.svg#arrow"></use>
-            </svg>
-        </button>
-    </div>
-</div>`;
+export const carouselItemHtml = ` <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                     style="width: 1100px;">
+                    <div>
+                        <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div>
+                                <a class="slider-item" href="https://www.aucklandartgallery.com/art-ideas/e-h-mccormick-library">
+                                    <div class="image-container">
+                                    <img src="https://cdn.aucklandunlimited.com/artgallery/assets/media/website-homepage-banner-library.jpg" alt="EH McCormick Research Library"></div>
+                                    <div class="content-container" style="background-color: rgb(255, 255, 255); color: black;">
+                                        <h2 class="title">EH McCormick Research Library</h2>
+                                        <p class="subtitle">On the Mezzanine floor of our Gallery sits a treasure trove of books, archives and more.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
