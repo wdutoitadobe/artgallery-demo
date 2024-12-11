@@ -1,4 +1,4 @@
-export const carouselWrapperHtml = `<div class="carousel-block-inner">
+export const carouselWrapperHtml = `
     <div class="slick-slider slick-initialized" dir="ltr">
         <button data-role="none" class="slick-arrow slick-prev" style="display: block;">
             <svg viewBox="0 0 40 40" aria-hidden="true" focusable="true" name="arrow" width="25" height="25"
@@ -17,5 +17,4 @@ export const carouselWrapperHtml = `<div class="carousel-block-inner">
                 <use xlink:href="/static/assets/images/sprite.5951385a21d003da0d50.svg#arrow"></use>
             </svg>
         </button>
-    </div>
-</div>`;
+    </div>`;
