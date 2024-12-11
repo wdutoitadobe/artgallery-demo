@@ -5,7 +5,7 @@ import {
   decorateButtons,
   decorateIcons,
   decoratePictures,
-  decorateParagraphs,
+  // decorateParagraphs,
   decorateSections,
   decorateBlocks,
   decorateTemplateAndTheme,
@@ -68,7 +68,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
-  decorateParagraphs(main);
+  // decorateParagraphs(main);
   decoratePictures(main);
 }
 
@@ -81,17 +81,24 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
 
   // -- peterocks -- //
-  const acplroot = document.createElement('div');
-  acplroot.classList.add('acpl');
-  while (document.body.firstChild) acplroot.append(document.body.firstChild);
-  document.body.appendChild(acplroot);
-  // -- peterocks -- //
+  const artSiteRootElement = document.createElement('div');
+  artSiteRootElement.id = "root"
+  const artSiteBaseElement = document.createElement('div');
+  artSiteBaseElement.classList.add('base');
+
+  artSiteRootElement.append(artSiteBaseElement);
+
+  while (document.body.firstChild) artSiteBaseElement.append(document.body.firstChild);
+  document.body.appendChild(artSiteRootElement);
 
   const main = doc.querySelector('main');
   if (main) {
     // -- peterocks -- //
     // main.classList.add('mt-4');
     // -- peterocks -- //
+
+    main.classList.add('page');
+    main.setAttribute('role', 'main');
 
     decorateMain(main);
     document.body.classList.add('appear');

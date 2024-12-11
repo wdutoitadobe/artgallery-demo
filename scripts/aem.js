@@ -425,11 +425,11 @@ function decorateIcons(element, prefix = '') {
  * Decorates all paragraphs in a container element.
  * @param {Element} main The container element
  */
-function decorateParagraphs(main) {
-  main.querySelectorAll('div > p').forEach((paragraph) => {
-    paragraph.classList.add('acpl-rich-text-content');
-  });
-}
+// function decorateParagraphs(main) {
+//   main.querySelectorAll('div > p').forEach((paragraph) => {
+//     paragraph.classList.add('acpl-rich-text-content');
+//   });
+// }
 
 /**
  * Decorates all paragraphs in a container element.
@@ -460,6 +460,10 @@ function decoratePictures(main) {
  * @param {Element} main The container element
  */
 function decorateSections(main) {
+  const artSiteMainContentElement = document.createElement('div');
+  artSiteMainContentElement.classList.add('content-page');
+  // main.appendChild(artSiteMainContentElement);
+
   main.querySelectorAll(':scope > div').forEach((section) => {
     const wrappers = [];
     let defaultContent = false;
@@ -476,6 +480,13 @@ function decorateSections(main) {
     section.classList.add('section');
     section.dataset.sectionStatus = 'initialized';
     section.style.display = 'none';
+
+    // Wrap the section with a <div class="constrain-width">
+    const constrainWrapper = document.createElement('div');
+    constrainWrapper.classList.add('constrain-width');
+    constrainWrapper.appendChild(section);
+
+    artSiteMainContentElement.appendChild(constrainWrapper);
 
     // Process section metadata
     const sectionMeta = section.querySelector('div.section-metadata');
@@ -495,6 +506,8 @@ function decorateSections(main) {
       sectionMeta.parentNode.remove();
     }
   });
+
+  main.appendChild(artSiteMainContentElement);
 }
 
 /**
@@ -634,6 +647,8 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
+  //const h1 = main.querySelector('h1');
+ // const picture = main.querySelector('picture');
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);
@@ -710,7 +725,7 @@ export {
   decorateBlock,
   decorateBlocks,
   decorateButtons,
-  decorateParagraphs,
+  // decorateParagraphs,
   decoratePictures,
   decorateIcons,
   decorateSections,
