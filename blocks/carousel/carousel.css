@@ -174,9 +174,3 @@
         --slide-content-width: auto;
     }
 }
-
-.carousel .carousel-slide .carousel-slide-image{
-@media (max-width: 768px){
-    height: 35vh;
-}
-}
