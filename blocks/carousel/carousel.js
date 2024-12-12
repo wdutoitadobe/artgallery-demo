@@ -1,6 +1,7 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 import { carouselWrapperHtml } from './carousel-wrapper-html.js';
 import { carouselItemHtml } from './carousel-item-html.js';
+import { carouselAllHtml } from './carousel-all.js';
 
 function updateActiveSlide(slide) {
     const block = slide.closest('.carousel');
@@ -193,6 +194,8 @@ export default async function decorate(block) {
     //
     // container.append(carouselWrapper);
     block.textContent = '';
+    // const test = document.createElement('div');
+    // test.innerHTML = carouselAllHtml;
     // carouselSection.appendChild(carouselWrapper);
     block.prepend(carouselWrapper);
     //
