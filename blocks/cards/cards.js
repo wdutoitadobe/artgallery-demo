@@ -79,62 +79,90 @@ function decorateDefaultCards(block) {
 
 function decorateTeaserCards(block) {
   block.classList.add('cards');
-  const blockDiv = document.createElement('div');
-  blockDiv.classList.add('tile-block-inner');
+  const cardsContainer = document.createElement('div');
+  cardsContainer.classList.add('card-container');
+
   [...block.children].forEach((row) => {
     // Wrapper elements
-    const cardDiv = document.createElement('div');
-    const linkDiv = row.children.item(0);
-    let href = linkDiv.getElementsByTagName('a')[0];
-    if(href){
-      href = href.getAttribute('href');
+    const cardWrapper = document.createElement('article');
+    cardWrapper.classList.add('tile-event', 'tile-featured');
+    const cardImgDiv = document.createElement('div');
+    cardImgDiv.classList.add('card-image-wrapper');
+    // const cardDetailsDiv = document.createElement('div');
+    // cardDetailsDiv.classList.add('tile-details');
+
+    //get the content columns
+    const imgColumn = row.children[0];
+    const mainTextColumn = row.children.item(1);
+    const linkTagsColumn = row.children.item(2);
+
+    //create the card wrapper anchor
+    imgColumn.classList.add('tile-thumbnail');
+    let cardMainAnchor = mainTextColumn.getElementsByTagName('a')[0];
+    let clonedAnchor;
+    if(cardMainAnchor){
+      clonedAnchor = cardMainAnchor.cloneNode(true); // 'true' means deep clone (includes child nodes)
+      clonedAnchor.textContent = '';
+      clonedAnchor.classList.add('tile-thumbnail-link');
+    } else {
+      clonedAnchor = document.createElement('a');
+      clonedAnchor.setAttribute('href', '#');
+    }
+    clonedAnchor.append(imgColumn); //cater for when there is no link
+
+    const pictureCell = imgColumn.querySelector('picture');
+    if(pictureCell){
+      //move all the child elements into anchor element
+      const pictureWrapperDiv = document.createElement('div');
+      pictureWrapperDiv.classList.add('image-container', 'square');
+      while (pictureCell.firstChild) {
+        pictureWrapperDiv.appendChild(pictureCell.firstChild);
+      }
+
+      //create the overlay div
+      pictureCell.classList.add('hover-area');
+      const hoverOverlay = document.createElement('div');
+      hoverOverlay.setAttribute('data-hover-text', 'true');
+      pictureCell.appendChild(hoverOverlay);
+
+      console.log(pictureCell.innerHTML);
+
+      const imgTag = pictureWrapperDiv.querySelector('img');
+      imgTag.classList.add('tile-thumbnail-image');
+
+      pictureWrapperDiv.appendChild(pictureCell);
+      clonedAnchor.append(pictureWrapperDiv);
     }
 
-    const newLinkElement = createElementWithClasses('a', 'card-link', 'unstyled');
-    newLinkElement.href = href;
-    newLinkElement.setAttribute('target', '_self');
-    newLinkElement.setAttribute('rel', '');
+    cardImgDiv.append(clonedAnchor);
+    cardWrapper.append(cardImgDiv);
 
-    const outerSpan = document.createElement('span');
-    newLinkElement.append(outerSpan);
-    const outerDiv = createElementWithClasses('div', 'acpl-card', 'primary');
-    outerSpan.append(outerDiv);
-    const cardBodyDiv = createElementWithClasses('div', 'card-body');
-    outerDiv.append(cardBodyDiv);
-    const cardHeadingDiv = createElementWithClasses('div', 'card-heading');
-    cardBodyDiv.append(cardHeadingDiv);
-    const cardHeadingTitleDiv = createElementWithClasses('div', 'card-heading-title');
-    cardHeadingDiv.append(cardHeadingTitleDiv);
+    //setup the text section of the card
+    mainTextColumn.classList.add('tile-details');
+    const pTag = mainTextColumn.querySelector('p.button-container');
 
-    // Heading component
-    const titleElement = createElementWithClasses('h3', 'card-title', 'overflow-wrap');
-    const textDiv = row.children.item(1);
-    let h3Text = textDiv.getElementsByTagName('h3')[0];
-    if(h3Text){
-      h3Text - h3Text.textContent;
+    if (pTag) {
+      const h5Tag = document.createElement('h5');
+      h5Tag.classList.add('tile-title');
+
+      // // Copy attributes from <p> to <h5>
+      // for (const attr of pTag.attributes) {
+      //   h5Tag.setAttribute(attr.name, attr.value);
+      // }
+
+      // Move the inner content from <p> to <h5>
+      while (pTag.firstChild) {
+        h5Tag.appendChild(pTag.firstChild);
+      }
+      pTag.parentNode.replaceChild(h5Tag, pTag);
     }
-    titleElement.innerHTML = `
-      <span class="acpl-content-type"></span>
-      <span class="main-heading-section">
-        <span>
-          <span class="heading">
-            <span class="">${h3Text}</span>
-          </span>
-        </span>
-      </span>`;
-    cardHeadingTitleDiv.append(titleElement);
-
-    // Paragraph component
-    const pElement = textDiv.getElementsByTagName('p')[0];
-    pElement.classList.add('acpl-rich-text-content', 'overflow-wrap');
-    cardBodyDiv.append(pElement);
 
     // Append to main div
-    cardDiv.append(newLinkElement);
-    blockDiv.append(cardDiv);
+    cardWrapper.append(mainTextColumn);
+    cardsContainer.append(cardWrapper);
   });
-  block.textContent = '';
-  block.append(blockDiv);
+  //block.textContent = '';
+  block.append(cardsContainer);
 }
 
 export default function decorate(block) {
