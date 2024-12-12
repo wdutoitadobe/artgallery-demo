@@ -57,3 +57,7 @@
   text-decoration: none;
   display: inline-block;
 }
+
+.section.cards-container {
+  padding-bottom: 4rem;
+}
