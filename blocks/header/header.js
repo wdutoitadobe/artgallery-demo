@@ -183,7 +183,6 @@ export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  console.log("***" + navPath);
   const fragment = await loadFragment(navPath);
 
   // clear the header
@@ -210,95 +209,6 @@ export default async function decorate(block) {
     navItemsSecondaryDiv.appendChild(link); // Append it to the container
   });
 
-  // while (fragment.firstElementChild) contentDiv.append(fragment.firstElementChild);
-  //
-  // // set the correct header left/middle/right css
-  // const classes = ['left', 'middle', 'right', 'menu'];
-  // classes.forEach((c, i) => {
-  //   const section = contentDiv.children[i];
-  //   if (section) section.classList.replace('section', `header-${c}`);
-  // });
-  //
-  // // -- process header left -- //
-  // const headerLeft = headerSection.querySelector('.header-left');
-  // const headerLeftImage = headerLeft.querySelector('img');
-  // if (headerLeftImage) {
-  //   headerLeft.classList.add('header-left-logo');
-  //   headerLeft.querySelector('img').removeAttribute('width');
-  //   headerLeft.querySelector('img').removeAttribute('height');
-  // }
-  //
-  // // process header middle -- //
-  // const headerMiddle = headerSection.querySelector('.header-middle');
-  // headerMiddle.classList.add('has-search');
-  // const searchLink = headerMiddle.querySelectorAll('a');
-  //
-  // const searchForm = document.createElement('form');
-  // searchForm.classList.add('acpl-form-container');
-  // searchForm.action = searchLink[0].getAttribute('href');
-  // searchForm.innerHTML = `
-  // <div class="acpl-search-box">
-  //   <div class="search-box">
-  //     <input class="acpl-textbox search-input rounded-corners" type="text"
-  //       placeholder="${searchLink[0].innerHTML}"
-  //       aria-label="${searchLink[0].innerHTML}"
-  //       value=""/>
-  //     <button type="button" role="button" class="acpl-button icon left no-text search-box-button" aria-label="Search">
-  //       <i class="acpl-icon utility-magnify"></i><span class=""></span>
-  //     </button>
-  //   </div>
-  // </div>`;
-  //
-  // // clear and add the content
-  // headerMiddle.textContent = '';
-  // headerMiddle.append(searchForm);
-  //
-  // // -- process header right -- //
-  // const headerRight = headerSection.querySelector('.header-right');
-  //
-  // // -- process header menu -- //
-  // const headerMenuSection = headerSection.querySelector('.header-menu');
-  // const headerMenuLinks = headerMenuSection.querySelectorAll('.default-content-wrapper p a');
-  // headerRight.append(generateMenu(headerMenuLinks));
-  // headerMenuSection.remove();
-  // // header right images
-  // const headerRightParagraphs = headerRight.querySelectorAll('.default-content-wrapper p');
-  // headerRightParagraphs.forEach((element, idx) => {
-  //   const headerRightPicture = element.querySelector('picture');
-  //   // header right logo
-  //   if (idx === 0) {
-  //     // create the div
-  //     const headerRightLogo = document.createElement('div');
-  //     headerRightLogo.classList.add('header-right-logo');
-  //     // add the logo
-  //     headerRightLogo.append(headerRightPicture);
-  //     const img = headerRightLogo.querySelector('img');
-  //     if (img) {
-  //       img.removeAttribute('width');
-  //       img.removeAttribute('height');
-  //     }
-  //     headerRight.append(headerRightLogo);
-  //   }
-  //
-  //   // header right mobile logo
-  //   if (idx === 1) {
-  //     // create the div
-  //     const mobHeaderRightLogo = document.createElement('div');
-  //     mobHeaderRightLogo.classList.add('mobile-header-right-logo');
-  //     // add the mobile logo
-  //     mobHeaderRightLogo.append(headerRightPicture);
-  //     const img = mobHeaderRightLogo.querySelector('img');
-  //     if (img) {
-  //       img.removeAttribute('width');
-  //       img.removeAttribute('height');
-  //     }
-  //     headerLeft.append(mobHeaderRightLogo);
-  //     // add the moble logo class
-  //     contentDiv.classList.add('has-right-logo');
-  //   }
-  //   // remove paragraph container
-  //   element.remove();
-  // });
   block.append(headerSection);
 }
 

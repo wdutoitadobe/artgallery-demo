@@ -13,3 +13,10 @@
         top: var(--header-menu-top-mobile);
     }
 }
+
+.navigation-item:hover .navigation-link{
+a{
+    text-decoration: none;
+    color: white;
+}
+}
