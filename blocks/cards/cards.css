@@ -1,49 +1,49 @@
-.card-teaser{
+.card-container {
   width: 100%;
-}
-
-.cards.teaser ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 0;
-  list-style: none;
-  margin: 0;
 }
 
-.cards.teaser li {
+.tile-event {
   display: flex;
   flex-direction: column;
 }
 
-.cards-card-image {
+.card-image-wrapper {
   width: 100%;
   height: 300px;
   margin-bottom: 1rem;
 }
 
-.cards-card-image img,
-.cards-card-image picture {
+.image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img,
+.image-container picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.cards-card-body {
+.tile-details {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.cards-card-body p {
+.tile-details p {
   margin: 0;
 }
 
-.button-container {
-  margin-top: 1rem;
+.tile-thumbnail-link {
+  text-decoration: none;
+  display: block;
 }
 
-.button-container .button {
+.tile-title a {
   text-decoration: none;
   display: inline-block;
 }
