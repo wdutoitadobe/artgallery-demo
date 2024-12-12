@@ -1399,12 +1399,10 @@ button:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: .6875rem 1.0625rem;
     font-size: 1rem;
     line-height: 1;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    white-space: nowrap;
     cursor: pointer;
     border: .0625rem solid transparent;
     transition: color .25s ease, border .25s ease, background-color .25s ease
@@ -8992,6 +8990,10 @@ button:hover {
 
 .placeholder-component pre {
     overflow-x: scroll
+}
+
+.testtt {
+    background-color: #3dcc4a;
 }
 
 /*# sourceMappingURL=index.d48cb6f611ddef6bb8a3.css.map*/
