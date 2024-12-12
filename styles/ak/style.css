@@ -2640,7 +2640,7 @@ button:hover {
     -moz-column-gap: .25rem;
     grid-column-gap: .25rem;
     column-gap: .25rem;
-    align-items: baseline
+    align-items: center;
 }
 
 .navigation-actions .icon-button {

@@ -1,22 +1,6 @@
-.header-wrapper .menu-content.menu-links {
-    top: var(--header-menu-top-desktop);
-}
-
-@media (width <= 991.5px) {
-    .header-wrapper .menu-content.menu-links {
-        top: var(--header-menu-top-tablet);
+.navigation-item:hover .navigation-link {
+    a{
+        text-decoration: none;
+        color: white;
     }
-}
-
-@media (width <= 576px) {
-    .header-wrapper .menu-content.menu-links {
-        top: var(--header-menu-top-mobile);
-    }
-}
-
-.navigation-item:hover .navigation-link{
-a{
-    text-decoration: none;
-    color: white;
-}
 }
